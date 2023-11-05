@@ -34,9 +34,10 @@ $$
   \int_e^A\frac{\mathrm{d}x}{x\ln^2 x}=\int_1^{\ln A}\frac{\mathrm{d}u}{u^2}=\left[-\frac{1}{u}\right]_{1}^{\ln A}=1-\frac{1}{\ln A} \cdot
 $$
 
-$$ \lim_{A\to \infty} \int_e^A \frac{\mathrm{d}x}{x\ln^2 x}=\lim_{A\to \infty} 1-\frac{1}{\ln A}=1 \cdot $$
+Donc l'intégrale impropre est convergente et vaut $1$ :
 
-Donc l'intégrale impropre est convergente et vaut $1$.
+$$ \lim_{A\to \infty} \int_e^A \frac{\mathrm{d}x}{x\ln^2 x}=\lim_{A\to \infty} 1-\frac{1}{\ln A}=1. $$
+
 
 # Exercice 2 (4 points)
 Calculer
@@ -45,7 +46,7 @@ $$ \int_D \frac{y\ \mathrm{d}x\mathrm{d}y}{1+x} $$
 
 où $D := \lbrace (x,y) \in \mathbf{R}^2\ |\ 0 \leq x \leq 1,\ 1 \leq y \leq 3 \rbrace$.
 
-**Réponse.** La fonction $f:D\to \mathbf{R}$ telle que $f(x,y)=\frac{y}{1+x}$ pour tout $(x,y)\in D$ est continue (fonction rationnelle sans pôle dans $D$). L'ensemble $D$ est compact car fermé et borné. La fonction $f$ étant continue, elle est intégrable sur $D$. (Par exemple $0\leq f\leq 3$ donc $\int_D |f(x,y)|\mathrm{d}x\mathrm{d}y\leq 3 \mu_L(D)=6$.) Comme la fonction $f$ est intégrable sur l'espace produit $D=[0,1]\times [1,3]$, le théorème de Fubini s'applique et 
+**Réponse.** La fonction $f:D\to \mathbf{R}$ telle que $f(x,y)=y/(1+x)$ pour tout $(x,y)\in D$ est continue (fonction rationnelle sans pôle dans $D$). L'ensemble $D$ est compact car fermé et borné. La fonction $f$ étant continue, elle est intégrable sur $D$. (Par exemple $0\leq f\leq 3$ donc $\int_D |f(x,y)|\mathrm{d}x\mathrm{d}y\leq 3 \mu_L(D)=6$.) Comme la fonction $f$ est intégrable sur l'espace produit $D=[0,1]\times [1,3]$, le théorème de Fubini s'applique et 
 
 $$
  \int_D \frac{y\ \mathrm{d}x\mathrm{d}y}{1+x} = \int_0^1\left(\int_1^3 \frac{y\ \mathrm{d}y}{1+x} \right)\mathrm{d}x= \int_0^1\left(\int_1^3y\ \mathrm{d}y \right) \frac{\mathrm{d}x}{1+x}=\left(\int_1^3y\ \mathrm{d}y \right)\left(\int_0^1 \frac{\mathrm{d}x}{1+x}\right).

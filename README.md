@@ -33,11 +33,13 @@ TD 9 - Équation de la chaleur
 
 TD 10 - Transformée de Laplace
 
+[Exam CC 1](exam-cc1/exam-cc1.md)
+
 [Exam CC 1 (2022-23)](exam-cc1-old/exam-cc1.pdf)
 
-[Exam CC 2 (2022-23)](exam-cc2-old/exam-cc2.pdf)
+[Exam CC 2 (2022-23)](exam-cc2-old/exam-cc2.md)
 
-[Exam CC 3 (2022-23)](exam-cc3-old/exam-cc3.pdf)
+[Exam CC 3 (2022-23)](exam-cc3-old/exam-cc3.md)
 
 # Bibliographie[^1]
 [Féjoz, J. Chapitres d'intégration et probabilités](https://www.ceremade.dauphine.fr/~fejoz/Integration/integration-probabilites.pdf)
