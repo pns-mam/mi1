@@ -13,19 +13,19 @@ Soient $f$ et $g$ toutes deux dans $L^1(\mathbf{R})$. Montrer que leur produit d
 
 **Réponse.** Comme
 
-$$ \int_\mathbf{R} \left( \int_\mathbf{R} |f(x-t)g(t)|\,\mathrm{d}x \right) \mathrm{d}t
- = \|f\|_1 \int_\mathbf{R} |g(t)|\,\mathrm{d}t = \|f\|_1 \|g\|_1 \lt \infty,
+$$ \int_\mathbf{R} \left( \int_\mathbf{R} |f(x-t)g(t)|\ \mathrm{d}x \right) \mathrm{d}t
+ = \|f\|_1 \int_\mathbf{R} |g(t)|\ \mathrm{d}t = \|f\|_1 \|g\|_1 < \infty,
 $$
 
 Tonelli implique que $\varphi(t,x)=f(x-t)g(t)$ appartient à $L^1(\mathbf{R}^2)$. Du coup, Fubini implique que l'intégrale
 
-$$ \int_\mathbf{R} f(x-t)g(t)\,\mathrm{d}t $$
+$$ \int_\mathbf{R} f(x-t)g(t)\ \mathrm{d}t $$
 
 est bien définie p.p. tout $x \in \mathbf{R}$. Avec Tonelli et le calcul précédent, on voit que
 
 $$ \begin{eqnarray*}
-  \int_\mathbf{R} |f*g(x)|\,\mathrm{d}x & \leq & \int_\mathbf{R} \left( \int_\mathbf{R} |f(x-t)g(t)|\,\mathrm{d}t \right) \mathrm{d}x\\
-  & = & \int_\mathbf{R} \left( \int_\mathbf{R} |f(x-t)g(t)|\,\mathrm{d}x \right) \mathrm{d}t\\
+  \int_\mathbf{R} |f*g(x)|\ \mathrm{d}x & \leq & \int_\mathbf{R} \left( \int_\mathbf{R} |f(x-t)g(t)|\ \mathrm{d}t \right) \mathrm{d}x\\
+  & = & \int_\mathbf{R} \left( \int_\mathbf{R} |f(x-t)g(t)|\ \mathrm{d}x \right) \mathrm{d}t\\
   & = & \|f\|_1 \|g\|_1.
 \end{eqnarray*} $$
 
@@ -34,7 +34,7 @@ Soient $f$ dans $L^1(\mathbf{R})$ et $g$ dans $L^\infty(\mathbf{R})$. Montrer qu
 
 **Réponse.**
 
-$$ \int_\mathbf{R} |f(x-t)g(t)|\,\mathrm{d}t \leq \|g\|_\infty \int_\mathbf{R} |f(x-t)|\,\mathrm{d}t = \|f\|_1 \|g\|_\infty $$
+$$ \int_\mathbf{R} |f(x-t)g(t)|\ \mathrm{d}t \leq \|g\|_\infty \int_\mathbf{R} |f(x-t)|\ \mathrm{d}t = \|f\|_1 \|g\|_\infty $$
 
 ce qui montre le caractère bien défini de la convolution et donne la majoration voulue.
 
@@ -42,14 +42,13 @@ ce qui montre le caractère bien défini de la convolution et donne la majoratio
 ## 2.1
 Soit $f$ dans $L^1(\mathbf{R})$ une fonction paire ($f(x)=f(-x)$ presque pour tout $x \in \mathbf{R}$). Montrer que $\hat{f}$ est également paire et que
 
-$$ \hat{f}(\xi) = 2\int_0^\infty f(x)\cos(2\pi \xi x)\,\mathrm{d}x. $$
+$$ \hat{f}(\xi) = 2\int_0^\infty f(x)\cos(2\pi \xi x)\ \mathrm{d}x. $$
 
 **Réponse.**
 
 $$ \begin{eqnarray*}
-  \int_\mathbf{R} e^{-2i\pi\xi x}f(x)\,\mathrm{d}x & = &
-  \int_\mathbf{R_-} e^{-2i\pi\xi x}f(x)\,\mathrm{d}x + \int_\mathbf{R_+} e^{-2i\pi\xi x}f(x)\,\mathrm{d}x\\
-  & = & \int_\mathbf{R_+} e^{2i\pi\xi y}f(-y)|-1|\,\mathrm{d}y + \int_\mathbf{R_+} e^{-2i\pi\xi x}f(x)\,\mathrm{d}x,
+  \int_\mathbf{R} e^{-2i\pi\xi x}f(x)\ \mathrm{d}x & = &
+  \int_\mathbf{R_-} e^{-2i\pi\xi x}f(x)\ \mathrm{d}x + \int_\mathbf{R_+} e^{-2i\pi\xi x}f(x)\ \mathrm{d}x\\ & = & \int_\mathbf{R_+} e^{2i\pi\xi y}f(-y)|-1|\ \mathrm{d}y + \int_\mathbf{R_+} e^{-2i\pi\xi x}f(x)\ \mathrm{d}x,
 \end{eqnarray*} $$
 
 d'où le résultat voulu en utilisant la parité de $f$ et le fait que $\cos u=\mathrm{Re}(e^{\pm iu})$.
@@ -78,8 +77,8 @@ Montrer que le produit de convolution $\chi_{[0,1]} * \chi_{[0,2]}$ appartient �
 **Réponse.** On a
 
 $$ \begin{eqnarray*}
-  \chi_{[0,1]} * \chi_{[0,2]}(x) & = & \int_0^1 \chi_{[0,2]}(x-t)\,\mathrm{d}t\\
-  & = & \int_{x-1}^x \chi_{[0,2]}(s)|-1|\,\mathrm{d}s
+  \chi_{[0,1]} * \chi_{[0,2]}(x) & = & \int_0^1 \chi_{[0,2]}(x-t)\ \mathrm{d}t\\
+  & = & \int_{x-1}^x \chi_{[0,2]}(s)|-1|\ \mathrm{d}s
 \end{eqnarray*} $$
 
 en posant $s=x-t \in [x-1,x]$. En étudiant les positions relatives des intervalles $[x,x+1]$ et $[0,2]$, on voit qu'on a $5$ cas : 
