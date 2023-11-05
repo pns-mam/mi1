@@ -70,8 +70,9 @@ $$ \tilde{\mathscr{A}} := \lbrace [0,1[, [1,2], ]2, 3] \rbrace $$
 
 sont égales.
 
-**Réponse.** On a $\mathscr{A} \subset \tilde{\mathscr{A}}$,
-donc $\mathscr{B}(\mathscr{A}) \subset \mathscr{B}(\tilde{\mathscr{A}})$.
+**Réponse.** On a $[0,2] = [0,1[ \cup [1,2]$ et $[1,3] = [1,2] \cup ]2,3]$, donc
+$\mathscr{A} \subset \mathscr{B}(\tilde{\mathscr{A}})$,
+et $\mathscr{B}(\mathscr{A}) \subset \mathscr{B}(\tilde{\mathscr{A}})$.
 Réciproquement, $[1,2] = [0,2] \cap [1,3]$ doit appartenir à $\mathscr{B}(\mathscr{A})$, de même que $[0,1[ = [0,2] \backslash [1,2]$ et $]2,3] = [1,3] \backslash [1,2]$; donc $\tilde{\mathscr{A}} \subset \mathscr{B}(\mathscr{A})$, et $\mathscr{B}(\tilde{\mathscr{A}}) \subset \mathscr{B}(\mathscr{A})$.
 
 ## 4.2
