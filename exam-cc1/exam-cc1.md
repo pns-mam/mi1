@@ -18,7 +18,19 @@ $$ \int_e^{\infty} \frac{\mathrm{d}x}{x\ln^2 x} \cdot $$
 
 NB. $e$ désigne le nombre d'Euler ($\ln e=1$)
 
-**Réponse.**
+**Réponse.** La fonction $x\mapsto 1/ (x\ln^2 x)$ est positive, continue et bornée sur $[e,+\infty[$. L'intégrale est donc impropre uniquement parce que le domaine d'intégration est non borné à droite. En ce qui concerne la convergence, on peut reconnaître une intégrale de Bertrand $\int_e^\infty \frac{\mathrm{d}x}{x^\alpha\ln^\beta x}$. Ici $\alpha=1$, $\beta=2>1$, ce qui satisfait le critère de convergence des intégrales Bertrand. (Remarque : nous n'avons pas l'obligation d'utiliser ce critère car nous devons calculer l'intégrale de toute façon.)
+
+Pour calculer l'intégrale, on calcule la limite 
+$$\lim_{A\to \infty} \int_e^A \frac{\mathrm{d}x}{x\ln^2 x}.$$
+Pour ce calcul, on peut passer le changement (par exemple) par le changement de variable $u=\ln x$, de sorte que $\mathrm{d}u=\frac{\mathrm{d} x}{x}$ et 
+
+$$
+  \int_e^A\frac{\mathrm{d}x}{x\ln^2 x}=\int_1^{\ln A}\frac{\mathrm{d}u}{u^2}=\left[-\frac{1}{u}\right]_{1}^{\ln A}=1-\frac{1}{\ln A}.
+$$
+
+$$\lim_{A\to \infty} \int_e^A \frac{\mathrm{d}x}{x\ln^2 x}=\lim_{A\to \infty} 1-\frac{1}{\ln A}=1.$$
+
+Donc l'intégrale impropre est convergente et vaut 1.
 
 # Exercice 2 (4 points)
 Calculer
@@ -28,6 +40,20 @@ $$ \int_D \frac{y\ \mathrm{d}x\mathrm{d}y}{1+x} $$
 où $D := \lbrace (x,y) \in \mathbf{R}^2\ |\ 0 \leq x \leq 1,\ 1 \leq y \leq 3 \rbrace$.
 
 **Réponse.**
+
+La fonction $f:D\to \mathbb{R}$ telle que $f(x,y)=\frac{y}{1+x}$ pour tout $(x,y)\in D$ est continue (fonction rationnelle sans pôle dans $D$). L'ensemble $D$ est compact car fermé et borné. La fonction $f$ étant continue et positive, elle est intégrable sur $D$. (Par exemple $0\leq f\leq 3$ donc $\int_D |f(x,y)|\mathrm{d}x\mathrm{d}y\leq 3 \lambda (D)=6$.) 
+
+Comme la fonction $f$ est intégrable sur l'espace produit $D=[0,1]\times [1,3]$, le théorème de Fubini s'applique et 
+
+$$
+ \int_D \frac{y\ \mathrm{d}x\mathrm{d}y}{1+x} = \int_0^1\left(\int_1^3 \frac{y\ \mathrm{d}y}{1+x} \right)\mathrm{d}x= \int_0^1\left(\int_1^3y\ \mathrm{d}y \right) \frac{\mathrm{d}x}{1+x}=\left(\int_1^3y\ \mathrm{d}y \right)\left(\int_0^1 \frac{\mathrm{d}x}{1+x}\right).
+$$
+
+Comme $\int_1^3y\ \mathrm{d}y=\left[\frac{y^2}{2}\right]_1^3=4$ et $\int_0^1 \frac{\mathrm{d}x}{1+x}=\left[\ln (1+x)\right]_0^1=\ln 2$, on en déduit
+
+$$
+\int_D \frac{y\ \mathrm{d}x\mathrm{d}y}{1+x}=4 \ln 2.
+$$
 
 # Exercice 3 (6 points)
 ## 3.1
