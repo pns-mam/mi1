@@ -9,7 +9,7 @@ Le barème prévisionnel est indiqué pour chaque exercice.**
 
 # Exo 1 (5 points)
 ## 1.1
-Soient $f$ et $g$ toutes deux dans $L^1(\mathbf{R})$. Montrer que leur produit de convolution est bien défini et appartient également à $L^1(\mathbf{R})$. En déduire une majoration de $\|f*g\|_1$.
+Soient $f$ et $g$ toutes deux dans $L^1(\mathbf{R})$. Montrer que leur produit de convolution est bien défini et appartient également à $L^1(\mathbf{R})$. En déduire une majoration de $\|f * g\|_1$.
 
 **Réponse.** Comme
 
