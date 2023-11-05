@@ -37,7 +37,7 @@ $$ \varphi(r,\theta,z) := (r\cos\theta, r\sin\theta,z). $$
 
 **Réponse.**
 
-$$ \varphi'(r,\theta,z) = \left\[ \begin{array}
+$$ \varphi'(r,\theta,z) = \left\[ \begin{array}{ccc}
   \cos\theta & -r\sin\theta & 0\\
   \sin\theta & r\cos\theta & 0\\
   0 & 0 & 1 \end{array} \right\] $$
