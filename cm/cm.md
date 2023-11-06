@@ -65,7 +65,7 @@ $\mu(B\setminus A)=\mu(B)-\mu(A)$ si $A \subset B$ et $\mu(A) \lt \infty$, conti
 
 ## Ch. 5 - Transformée de Fourier
 
-### 1. Transformée de Fourier $L^1$
+### 1. Transformée de Fourier L^1
 - th. déf. : transformée de Fourier
 $\hat{f}(\xi):=\int_{\mathbf{R}} f(x)e^{-2i\pi\xi x}\,\mathrm{d}x$
 - prop. : effet des translations et homothéties
