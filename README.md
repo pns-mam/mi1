@@ -25,7 +25,7 @@
 [TD 6 - Espaces L^p](td6/td6.md)
 ([corrigé](td6/td6-corr.pdf))
 
-TD 7 - Transformée de Fourier
+[TD 7 - Transformée de Fourier](td7/td7.md)
 
 TD 8 - Convolution
 
