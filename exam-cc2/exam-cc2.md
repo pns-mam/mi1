@@ -1,4 +1,4 @@
-[PNS](http://caillau.perso.math.cnrs.fr/logo-pns.png)
+![PNS](http://caillau.perso.math.cnrs.fr/logo-pns.png)
 ## MAM3
 # Mathématiques de l'ingénieur.e 1
 # 2023-24
