@@ -27,7 +27,8 @@ on définit une suite de fonctions intégrables sur $\mathbf{R}_+$ qui converge 
 ### 1.3
 $$ \int_0^n (1-x/n)^{n^2}\cos(nx)\ \mathrm{d}x $$
 
-**Réponse.** En posant $f_n(x) := (1-x/n)^{n^2}\cos(nx)\chi_{[0,n]}$, on définit une suite de fonctions intégrables sur $\mathbf{R}_+$ qui converge simplement vers $0$ en tout $x > 0$ puisque  $(1-x/n)^{n^2} = e^{n^2\ln(1-x/n)}$ qui tend (équivalent puis composition de limites) vers $\lim_{y \to \infty} e^{-y}=0$. D'où l'existence de la limite, nulle, par convergence dominée.
+**Réponse.** En posant $f_n(x) := (1-x/n)^{n^2}\cos(nx)\chi_{[0,n]}$, on définit une suite de fonctions intégrables sur $\mathbf{R}_+$
+qui converge simplement vers $0$ en tout $x > 0$ puisque  $(1-x/n)^{n^2} = e^{n^2\ln(1-x/n)}$ qui tend (équivalent puis composition de limites) vers $\lim_{y \to \infty} e^{-y}=0$. D'où l'existence de la limite, nulle, par convergence dominée.
 
 ## Exercice 2 (5 points)
 
@@ -117,7 +118,7 @@ $$ \int_a^b \left( \int_a^x f(x,y)\ \mathrm{d}y \right)\ \mathrm{d}x
 
 $$ C := \lbrace (x,y) \in [a,b]^2\ |\ x \geq y \rbrace. $$
 
-[!image](fig.jpg)
+![image](fig.jpg)
 
 ### 4.2
 On suppose de plus que, presque pour tout $(x,y) \in [a,b]^2$, on a $f(y,x)=f(x,y)$. Montrer que
