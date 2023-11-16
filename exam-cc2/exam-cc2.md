@@ -131,13 +131,10 @@ $$ \widetilde{C} := \lbrace (x,y) \in [a,b]^2\ |\ y \geq x \rbrace $$
 
 le symétrique de $C$ par rapport à la droite $y=x$. On a
 
-$$ \int_{[a,b]^2} f(x,y)\ \mathrm{d}x\mathrm{d}y
-= \int_C f(x,y)\ \mathrm{d}x\mathrm{d}y
-+ \int_{\widetilde{C}} f(x,y)\ \mathrm{d}x\mathrm{d}y, $$
+$$ \int_{[a,b]^2} f(x,y)\ \mathrm{d}x\mathrm{d}y = \int_C f(x,y)\ \mathrm{d}x\mathrm{d}y + \int_{\widetilde{C}} f(x,y)\ \mathrm{d}x\mathrm{d}y, $$
 
 et
 
-$$ \int_{\widetilde{C}} f(x,y)\ \mathrm{d}x\mathrm{d}y
-= \int_C f(v,u)\ \mathrm{d}u\mathrm{d}v, $$
+$$ \int_{\widetilde{C}} f(x,y)\ \mathrm{d}x\mathrm{d}y = \int_C f(v,u)\ \mathrm{d}u\mathrm{d}v, $$
 
 cette dernière égalité (claire géométriquement) s'obtenant en considérant le changement de variable $(x,y) = (v,u) = \varphi(u,v)$, $\varphi : C \to \widetilde{C}$ (noter que $|\det\varphi'(u,v)| = 1$). On en déduit l'égalité voulue quand $f$ est symétrique.
