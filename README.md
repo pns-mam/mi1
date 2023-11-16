@@ -35,6 +35,8 @@ TD 10 - Transformée de Laplace
 
 [Exam CC 1](exam-cc1/exam-cc1.md)
 
+[Exam CC 2](exam-cc2/exam-cc2.md)
+
 [Exam CC 1 (2022-23)](exam-cc1-old/exam-cc1.pdf)
 
 [Exam CC 2 (2022-23)](exam-cc2-old/exam-cc2.md)
