@@ -84,7 +84,7 @@ $\hat{f}(\xi):=\int_{\mathbf{R}} f(x)e^{-2i\pi\xi x}\,\mathrm{d}x$
 - déf. : abscisse de sommabilité d'une fonction mesurable,
 $s_0 := \inf \lbrace \sigma \in \mathbf{R}\ |\ e^{-\sigma t}f \in L^1(\mathbf{R}_+) \rbrace$
 - déf. : transformée de Laplace
-$\mathscr{L}f(s) := \int_0^\infty e^{-st}f(t)\,\mathrm{d}t$, $\text{Re}(s) > s_0$
+$\mathscr{L}f(s) := \int_0^\infty e^{-st}f(t)\ \mathrm{d}t$, $\text{Re}(s) > s_0$
 - rem. : lien avec transformée de Fourier
 - prop. : dérivation et transformée de Laplace
 - rem. : holomorphie de la transformée de Laplace
