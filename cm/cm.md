@@ -88,5 +88,5 @@ $\mathscr{L}f(s) := \int_0^\infty e^{-st}f(t)\ \mathrm{d}t$, $\text{Re}(s) > s_0
 - rem. : lien avec transformée de Fourier
 - prop. : dérivation et transformée de Laplace
 - rem. : holomorphie de la transformée de Laplace
-- prop. : $\mathscr{L} (f * g) = \mathscr{L} f * \mathscr{L}g$
+- prop. : $\mathscr{L} (f * g) = \mathscr{L} f \cdot \mathscr{L}g$
 - rem. : injectivité et transformée inverse
