@@ -28,10 +28,10 @@
 [TD 7 - Transformée de Fourier](td7/td7.md)
 ([corrigé](td7/td7-corr.pdf))
 
-TD 8 - Convolution
+[TD 8 - Convolution](td8/td8.md)
 ([corrigé](td8/td8-corr.pdf))
 
-TD 9 - Équation de la chaleur
+[TD 9 - Équation de la chaleur](td9/td9.md)
 
 TD 10 - Transformée de Laplace
 
