@@ -11,12 +11,12 @@
 ## Exercice 1
 
 ### 1.1
-Soient $f \in L^1(\mathbf{R})$ et $g \in L^\infty(\mathbf{R})$, montrer que $f * g$ est bien définie, que $f * g $ appartient à $L^\infty(\mathbf{R})$ et que
+Soient $f \in L^1(\mathbf{R})$ et $g \in L^\infty(\mathbf{R})$, montrer que $f * g$ est bien définie, que $f * g$ appartient à $L^\infty(\mathbf{R})$ et que
 
 $$ \|f * g\|_\infty \leq \|f\|_1 \|g\|_\infty. $$
 
 ### 1.2
-Soient $f \in L^2(\mathbf{R})$ et $g \in L^2(\mathbf{R})$, montrer que $f * g$ est bien définie, que $f * g $ appartient à $L^\infty(\mathbf{R})$ et que
+Soient $f \in L^2(\mathbf{R})$ et $g \in L^2(\mathbf{R})$, montrer que $f * g$ est bien définie, que $f * g$ appartient à $L^\infty(\mathbf{R})$ et que
 
 $$ \|f * g\|_\infty \leq \|f\|_2 \|g\|_2. $$
 
