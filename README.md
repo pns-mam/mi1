@@ -26,14 +26,18 @@
 ([corrigé](td6/td6-corr.pdf))
 
 [TD 7 - Transformée de Fourier](td7/td7.md)
+([corrigé](td7/td7-corr.pdf))
 
 TD 8 - Convolution
+([corrigé](td8/td8-corr.pdf))
 
 TD 9 - Équation de la chaleur
 
 TD 10 - Transformée de Laplace
 
 [Exam CC 1](exam-cc1/exam-cc1.md)
+
+[Exam CC 2](exam-cc2/exam-cc2.md)
 
 [Exam CC 1 (2022-23)](exam-cc1-old/exam-cc1.pdf)
 
