@@ -13,26 +13,26 @@ $$
 G_\sigma:x\mapsto\frac{1}{\sigma \sqrt{2 \pi}}e^{-\frac{x^2}{2\sigma^2}}
 $$
 
-et soit $\hat{G}_\sigma$ sa transformée de Fourier.
+et soit $\widehat{G}_\sigma$ sa transformée de Fourier.
 
 ### 1.1
-Montrer que $\hat{G}_\sigma$ est dérivable sur $\mathbf{R}$.
+Montrer que $\widehat{G}_\sigma$ est dérivable sur $\mathbf{R}$.
 
 ### 1.2
-En déduire que $\hat{G}_\sigma$ est solution une équation différentielle linéaire et la résoudre en s'appuyant sur le problème de Cauchy  $\hat{G}_\sigma(0)=1$.
+En déduire que $\widehat{G}\_\sigma$ est solution une équation différentielle linéaire et la résoudre en s'appuyant sur le problème de Cauchy  $\widehat{G}_\sigma(0)=1$.
 
 ## Exo 2
 Soit $f \in L^1(\mathbf{R})$ telle que
 
 $$
-f(t) = \int_{-\infty}^t g(s)\,\mathrm{d}
+f(t) = \int_{-\infty}^t g(s)\ \mathrm{d}
 $$
 
 avec $g \in L^1(\mathbf{R})$. On définit alors et on note $f':=g$.
-Montrer que pour tout $\xi\in \mathbf{R}$,
+Montrer que pour tout $\xi \in \mathbf{R}$,
 
 $$
-\widehat{f'}(\xi)=2i\pi \xi \hat{f}(\xi).
+\widehat{f'}(\xi)=2i\pi\xi\widehat{f}(\xi).
 $$
 
 ## Exo 3
@@ -47,7 +47,7 @@ $$
 Pour tout $t> 0$ fixé, exprimer $\widehat{\partial_{xx}u(t,\cdot)}$ en fonction de $\widehat{u(t,\cdot)}$. 
 
 ### 3.2
-Montrer que pour tout $\xi\in \mathbf{R}$, $t\mapsto \hat{u}(t,\xi)$ satisfait une équation différentielle linéaire. En déduire la valeur de $\hat{u}(t,\xi)$ en fonction de $\hat{u}_0(\xi)$, où $u_0=u(0,\cdot)$.
+Montrer que pour tout $\xi \in \mathbf{R}$, $t\mapsto \widehat{u}(t,\xi)$ satisfait une équation différentielle linéaire. En déduire la valeur de $\widehat{u}(t,\xi)$ en fonction de $\widehat{u}_0(\xi)$, où $u_0=u(0,\cdot)$.
 
 ### 3.3
-En déduire $u(t,x)$ pour tout $t>0$ et $x\in \mathbf{R}$. (Indication : on rappelle la formule $\widehat{f * g}=\hat{f} \cdot \hat{g}$ pour tout $f,g \in L^1(\mathbf{R})$.)
+En déduire $u(t,x)$ pour tout $t>0$ et $x\in \mathbf{R}$. (Indication : on rappelle la formule $\widehat{f * g}=\widehat{f} \cdot \hat{g}$ pour tout $f,g \in L^1(\mathbf{R})$.)
