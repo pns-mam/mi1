@@ -13,12 +13,12 @@
 ### 1.1
 Soient $f \in L^1(\mathbf{R})$ et $g \in L^\infty(\mathbf{R})$, montrer que $f * g$ est bien définie, que $f * g$ appartient à $L^\infty(\mathbf{R})$ et que
 
-$$ \|f * g\|_\infty \leq \|f\|_1 \|g\|_\infty. $$
+$$ ||f * g||\_\infty \leq ||f||\_1 ||g||_\infty. $$
 
 ### 1.2
 Soient $f \in L^2(\mathbf{R})$ et $g \in L^2(\mathbf{R})$, montrer que $f * g$ est bien définie, que $f * g$ appartient à $L^\infty(\mathbf{R})$ et que
 
-$$ \|f * g\|_\infty \leq \|f\|_2 \|g\|_2. $$
+$$ ||f * g||_\infty \leq ||f||_2 ||g||_2. $$
 
 ## Exercice 2
 
@@ -46,6 +46,4 @@ Soient $f$ et $g$ dans $L^1(\mathbf{R})$, montrer que
 $$ \widehat{f * g} = \widehat{f} \cdot \widehat{g}. $$
 
 ### 3.2
-Déterminer
-
-$$ \widehat{\chi_{[0,1]} * \chi_{[0,1]} * \chi_{[0,1]}}. $$
+Déterminer la transformée de Fourier de $\chi_{[0,1]} * \chi_{[0,1]} * \chi_{[0,1]}$.
