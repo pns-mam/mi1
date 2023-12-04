@@ -19,7 +19,7 @@ et soit $\widehat{G}_\sigma$ sa transformée de Fourier.
 Montrer que $\widehat{G}_\sigma$ est dérivable sur $\mathbf{R}$.
 
 ### 1.2
-En déduire que $\widehat{G}\_\sigma$ est solution une équation différentielle linéaire et la résoudre en s'appuyant sur le problème de Cauchy de condition initiale $\widehat{G}_\sigma(0)=1$.
+En déduire que $\widehat{G}\_\sigma$ est solution une équation différentielle linéaire et la résoudre en s'appuyant sur le problème de Cauchy de condition initiale $\widehat{G}_\sigma(0)$ (que l'on calculera).
 
 ## Exo 2
 Soit $f \in L^1(\mathbf{R})$ telle que
