@@ -32,8 +32,10 @@
 ([corrigé](td8/td8-corr.pdf))
 
 [TD 9 - Équation de la chaleur](td9/td9.md)
+([corrigé](td9/td9-corr.pdf))
 
-TD 10 - Transformée de Laplace
+[TD 10 - Transformée de Laplace](td10/td10.pdf)
+([corrigé](td10/td10-corr.pdf))
 
 [Exam CC 1](exam-cc1/exam-cc1.md)
 
