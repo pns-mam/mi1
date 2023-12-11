@@ -9,12 +9,12 @@ Le barème prévisionnel est indiqué pour chaque exercice.**
 
 # Exo 1 (5 points)
 ## 1.1
-Soient $f$ et $g$ toutes deux dans $L^1(\mathbf{R})$. Montrer que leur produit de convolution est bien défini et appartient également à $L^1(\mathbf{R})$. En déduire une majoration de $\|f * g\|_1$.
+Soient $f$ et $g$ toutes deux dans $L^1(\mathbf{R})$. Montrer que leur produit de convolution est bien défini et appartient également à $L^1(\mathbf{R})$. En déduire une majoration de $||f * g||_1$.
 
 **Réponse.** Comme
 
 $$ \int_\mathbf{R} \left( \int_\mathbf{R} |f(x-t)g(t)|\ \mathrm{d}x \right) \mathrm{d}t
- = \|f\|_1 \int_\mathbf{R} |g(t)|\ \mathrm{d}t = \|f\|_1 \|g\|_1 < \infty,
+ = ||f||\_1 \int_\mathbf{R} |g(t)|\ \mathrm{d}t = ||f||_1 ||g||_1 < \infty,
 $$
 
 Tonelli implique que $\varphi(t,x)=f(x-t)g(t)$ appartient à $L^1(\mathbf{R}^2)$. Du coup, Fubini implique que l'intégrale
@@ -24,9 +24,9 @@ $$ \int_\mathbf{R} f(x-t)g(t)\ \mathrm{d}t $$
 est bien définie p.p. tout $x \in \mathbf{R}$. Avec Tonelli et le calcul précédent, on voit que
 
 $$ \begin{eqnarray*}
-  \int_\mathbf{R} |f*g(x)|\ \mathrm{d}x & \leq & \int_\mathbf{R} \left( \int_\mathbf{R} |f(x-t)g(t)|\ \mathrm{d}t \right) \mathrm{d}x\\
+  \int_\mathbf{R} |f * g(x)|\ \mathrm{d}x & \leq & \int_\mathbf{R} \left( \int_\mathbf{R} |f(x-t)g(t)|\ \mathrm{d}t \right) \mathrm{d}x\\
   & = & \int_\mathbf{R} \left( \int_\mathbf{R} |f(x-t)g(t)|\ \mathrm{d}x \right) \mathrm{d}t\\
-  & = & \|f\|_1 \|g\|_1.
+  & = & ||f||_1 ||g||_1.
 \end{eqnarray*} $$
 
 ## 1.2
