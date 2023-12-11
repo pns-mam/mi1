@@ -111,8 +111,9 @@ $$ \mathscr{L}(te^{\alpha t})(s) = -\mathscr{L}(e^{\alpha t})'(s) = \frac{1}{(s-
 ## 3.2
 On considère l’équation différentielle ordinaire suivante : trouver $y$ deux fois dérivable telle que
 
-$$ y’’(t)-2y'(t)+y(t) = 0,\quad t \geq 0,\\
-y(0)=1,\ y’(0)=0. $$
+$$ y’’(t)-2y'(t)+y(t) = 0,\quad t \geq 0, $$
+
+$$ y(0)=1,\quad y’(0)=0. $$
 
 On admet qu’elle possède une unique solution, notée $y$. Montrer que, partout où elle est définie, la transformée de Laplace $\mathscr{L}y$ vérifie l’équation
 
