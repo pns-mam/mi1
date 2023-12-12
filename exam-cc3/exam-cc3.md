@@ -16,7 +16,7 @@ On se fixe $x$ dans $\mathbf{R}$ ; montrer que l'application $h : t \mapsto f(x-
 ### 1.2
 Soit $x$ dans $\mathbf{R}$ ; à l'aide du théorème de Hölder, montrer que le produit de convolution
 
-$$ f * g(x) = \int_{\mathbf{R}} f(x-t)g(t)\,\mathrm{d}t $$
+$$ f * g(x) = \int_{\mathbf{R}} f(x-t)g(t)\ \mathrm{d}t $$
 
 est bien défini.
 
@@ -29,7 +29,7 @@ Soit $f : \mathbf{R}^2 \to \mathbf{R}$ mesurable et positive. On note $D$ le dis
 ### 2.1
 Montrer que
 
-$$ I := \int_D \frac{f(x,y)}{\sqrt{x^2+y^2}}\,\mathrm{d}x\mathrm{d}y = \lim_{n \to \infty} \int_{D_n} \frac{f(x,y)}{\sqrt{x^2+y^2}}\,\mathrm{d}x\mathrm{d}y $$ 
+$$ I := \int_D \frac{f(x,y)}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y = \lim_{n \to \infty} \int_{D_n} \frac{f(x,y)}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y $$ 
 
 où, pour $n \geq 1$,
 
@@ -42,7 +42,7 @@ $$ f(r\cos\theta,r\sin\theta) = g(r). $$
 
 Montrer que
 
-$$ I = 2\pi \int_0^1 g(r)\,\mathrm{d}r. $$
+$$ I = 2\pi \int_0^1 g(r)\ \mathrm{d}r. $$
 
 ### 2.3
 Application : déterminer
@@ -54,7 +54,7 @@ $$ \int_D \frac{\mathrm{d}x \mathrm{d}y}{(x^2+y^2)^{3/4}} \cdot $$
 ## 3.1
 Soit $f$ dans $L^1(\mathbf{R})$ une fonction impaire ($f(-x)=-f(x)$ presque pour tout $x \in \mathbf{R}$). Montrer que $\hat{f}$ est également impaire et que
 
-$$ \hat{f}(\xi) = -2i\int_0^\infty f(x)\sin(2\pi \xi x)\,\mathrm{d}x. $$
+$$ \hat{f}(\xi) = -2i\int_0^\infty f(x)\sin(2\pi \xi x)\ \mathrm{d}x. $$
 
 ## 3.2
 En déduire la transformée de Fourier de $f : \mathbf{R} \to \mathbf{R}$, $f(t) = t e^{-|t|}$.
