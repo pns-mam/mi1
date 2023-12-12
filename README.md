@@ -41,6 +41,8 @@
 
 [Exam CC 2](exam-cc2/exam-cc2.md)
 
+[Exam CC 3](exam-cc3/exam-cc3.md)
+
 [Exam CC 1 (2022-23)](exam-cc1-old/exam-cc1.pdf)
 
 [Exam CC 2 (2022-23)](exam-cc2-old/exam-cc2.md)
