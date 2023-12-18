@@ -25,7 +25,7 @@ En déduire que $\widehat{G}\_\sigma$ est solution une équation différentielle
 Soit $f \in L^1(\mathbf{R})$ telle que
 
 $$
-f(t) = \int_{-\infty}^t g(s)\ \mathrm{d}
+f(t) = \int_{-\infty}^t g(s)\ \mathrm{d}s
 $$
 
 avec $g \in L^1(\mathbf{R})$. On définit alors et on note $f':=g$.
