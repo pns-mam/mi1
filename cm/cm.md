@@ -29,8 +29,8 @@ $\mu(B\setminus A)=\mu(B)-\mu(A)$ si $A \subset B$ et $\mu(A) \lt \infty$, conti
 ## Ch. 2 - Intégration et convergence
 
 ### 1. Cas des fonctions mesurables positives
-- déf. fonction étagée (et forme canonique)
-- déf. intégrale d'une fonction étagée mesurable positive
+- déf. fonction simple mesurable ou "étagée" (et forme canonique)
+- déf. intégrale d'une fonction étagée positive
 - déf. intégrale d'une fonction mesurable positive
 - rem. : approximation des fonctions positives mesurables par des fonctions étagées
 - prop. : si $f$ est mesurable et positive, $\int_X f\mathrm{d}\mu=0 \iff f=0$ $\mu$-p.p.
