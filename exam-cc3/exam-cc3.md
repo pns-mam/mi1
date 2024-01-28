@@ -17,18 +17,18 @@ On se fixe $x$ dans $\mathbf{R}$ ; montrer que l'application $h : t \mapsto f(x-
 
 $$ \int_{\mathbf{R}} |f(x-t)|^p\ \mathrm{d}t = \int_{\mathbf{R}} |f(y)|^p\ \mathrm{d}y < \infty $$
 
-Si $p=\infty$, $$|f(x-t)| \leq \Vert f \Vert_\infty$$ p.p. $t$. 
+Si $p=\infty$, $$|f(x-t)| \leq \Vert f \Vert_\infty \text{ p.p. } $t$. 
 
 ### 1.2
-Soit $x$ dans $\mathbf{R}$~; à l'aide du théorème de Hölder, montrer que le produit de convolution
+Soit $x$ dans $\mathbf{R}$ ; à l'aide du théorème de Hölder, montrer que le produit de convolution
 
-$$ f * g(x) = \int_{\mathbf{R}} f(x-t)g(t)\ \mathrm{d}t $$
+$$ f * g(x) := \int_{\mathbf{R}} f(x-t)g(t)\ \mathrm{d}t $$
 
 est bien défini.
 
-**Réponse.** Avec la notation ($h$) de la question précédente, pour tout $x$ on a
+**Réponse.** Avec la notation de la question précédente, pour tout $x$ on a
 
-$$ \int_{\mathbf{R}} |f(x-t)g(t)|\ \mathrm{d}t \leq \Vert h \Vert_p \Vert g \Vert_q \leq \Vert f \Vert_p \Vert g \Vert_q < \infty $$
+$$ \int_{\mathbf{R}} |f(x-t)g(t)|\ \mathrm{d}t \leq \Vert h \Vert_p \Vert g \Vert_q \leq \Vert f \Vert_p \Vert g \Vert_q < \infty, $$
 
 de sorte que le produit de convolution est bien défini.
 
@@ -37,7 +37,7 @@ En déduire que ce produit appartient à $L^\infty(\mathbf{R})$ et donner une ma
 
 **Réponse.** La question précédente montre que, pour tout $x$ on a 
 
-$$ |\int_{\mathbf{R}} f(x-t)g(t)|\ \mathrm{d}t | \leq \int_{\mathbf{R}} |f(x-t)g(t)|\ \mathrm{d}t \leq \Vert f \Vert_p \Vert g \Vert_q < \infty, $$
+$$ |\int_{\mathbf{R}} f(x-t)g(t)\ \mathrm{d}t | \leq \int_{\mathbf{R}} |f(x-t)g(t)|\ \mathrm{d}t \leq \Vert f \Vert_p \Vert g \Vert_q < \infty, $$
 
 donc que $f * g$ est bornée et que $\Vert f * g \Vert_\infty \leq \Vert f \Vert_p \Vert g \Vert_q$.
 
@@ -55,7 +55,7 @@ $$ D_n := \lbrace (x,y) \in \mathbf{R}^2\ |\ 1/n^2 \leq x^2+y^2 \leq 1 \rbrace. 
 
 **Réponse.** Par convergence monotone,
 
-$$ \int_{\mathbf{R}^2} \frac{f(x,y)\Chi_{|D_n}}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y \to I,\quad n \to \infty. $$ 
+$$ \int_{\mathbf{R}^2} \frac{f(x,y)\chi_{|D_n}}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y \to I,\quad n \to \infty. $$ 
 
 ### 2.2
 On suppose désormais $f$ à symétrie radiale, c'est à dire telle qu'il existe $g : \mathbf{R} \to \mathbf{R}$ telle que, quel que soit $\theta \in [0,2\pi]$,
@@ -68,7 +68,7 @@ $$ I = 2\pi \int_0^1 g(r)\ \mathrm{d}r. $$
 
 **Réponse.** On passe en polaires sur $D_n$ pour obtenir, après simplification par $r$, Fubini, puis à nouveau convergence monotone,
 
-$$ \int_{D_n} \frac{f(x,y)}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y = \int_{[1/n,1] \times [0,2\pi] g(r)\ \mathrm{d}r\mathmr{r}\theta = 2\pi\int_{[1/n,1]} g(r)\ \mathrm{d}r \to 2\pi \int_0^1 g(r)\ \mathrm{d}r = I,\quad n \to \infty. $$ 
+$$ \int_{D_n} \frac{f(x,y)}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y = \int_{[1/n,1]} \times [0,2\pi] g(r)\ \mathrm{d}r\mathmr{r}\theta = 2\pi\int_{[1/n,1]} g(r)\ \mathrm{d}r \to 2\pi \int_0^1 g(r)\ \mathrm{d}r = I,\quad n \to \infty. $$ 
 
 ### 2.3
 Application : déterminer
