@@ -15,20 +15,20 @@ On se fixe $x$ dans $\mathbf{R}$ ; montrer que l'application $h : t \mapsto f(x-
 
 **Réponse.** Si $p$ est fini, on change de variable pour écrire
 
-$$ \int_{\mathbf{R}} |f(x-t)|^p\,\mathrm{d}t = \int_{\mathbf{R}} |f(y)|^p\,\mathrm{d}y < \infty $$
+$$ \int_{\mathbf{R}} |f(x-t)|^p\ \mathrm{d}t = \int_{\mathbf{R}} |f(y)|^p\ \mathrm{d}y < \infty $$
 
 Si $p=\infty$, $$|f(x-t)| \leq \Vert f \Vert_\infty$$ p.p. $t$. 
 
 ### 1.2
 Soit $x$ dans $\mathbf{R}$~; à l'aide du théorème de Hölder, montrer que le produit de convolution
 
-$$ f * g(x) = \int_{\mathbf{R}} f(x-t)g(t)\,\mathrm{d}t $$
+$$ f * g(x) = \int_{\mathbf{R}} f(x-t)g(t)\ \mathrm{d}t $$
 
 est bien défini.
 
 **Réponse.** Avec la notation ($h$) de la question précédente, pour tout $x$ on a
 
-$$ \int_{\mathbf{R}} |f(x-t)g(t)|\,\mathrm{d}t \leq \Vert h \Vert_p \Vert g \Vert_q \leq \Vert f \Vert_p \Vert g \Vert_q < \infty $$
+$$ \int_{\mathbf{R}} |f(x-t)g(t)|\ \mathrm{d}t \leq \Vert h \Vert_p \Vert g \Vert_q \leq \Vert f \Vert_p \Vert g \Vert_q < \infty $$
 
 de sorte que le produit de convolution est bien défini.
 
@@ -37,7 +37,7 @@ En déduire que ce produit appartient à $L^\infty(\mathbf{R})$ et donner une ma
 
 **Réponse.** La question précédente montre que, pour tout $x$ on a 
 
-$$ |\int_{\mathbf{R}} f(x-t)g(t)|\,\mathrm{d}t | \leq \int_{\mathbf{R}} |f(x-t)g(t)|\,\mathrm{d}t \leq \Vert f \Vert_p \Vert g \Vert_q < \infty, $$
+$$ |\int_{\mathbf{R}} f(x-t)g(t)|\ \mathrm{d}t | \leq \int_{\mathbf{R}} |f(x-t)g(t)|\ \mathrm{d}t \leq \Vert f \Vert_p \Vert g \Vert_q < \infty, $$
 
 donc que $f * g$ est bornée et que $\Vert f * g \Vert_\infty \leq \Vert f \Vert_p \Vert g \Vert_q$.
 
@@ -47,7 +47,7 @@ Soit $f : \mathbf{R}^2 \to \mathbf{R}$ mesurable et positive. On note $D$ le dis
 ### 2.1
 Montrer que
 
-$$ I := \int_D \frac{f(x,y)}{\sqrt{x^2+y^2}}\,\mathrm{d}x\mathrm{d}y = \lim_{n \to \infty} \int_{D_n} \frac{f(x,y)}{\sqrt{x^2+y^2}}\,\mathrm{d}x\mathrm{d}y $$ 
+$$ I := \int_D \frac{f(x,y)}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y = \lim_{n \to \infty} \int_{D_n} \frac{f(x,y)}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y $$ 
 
 où, pour $n \geq 1$,
 
@@ -55,7 +55,7 @@ $$ D_n := \lbrace (x,y) \in \mathbf{R}^2\ |\ 1/n^2 \leq x^2+y^2 \leq 1 \rbrace. 
 
 **Réponse.** Par convergence monotone,
 
-$$ \int_{\mathbf{R}^2} \frac{f(x,y)\Chi_{|D_n}}{\sqrt{x^2+y^2}}\,\mathrm{d}x\mathrm{d}y \to I,\quad n \to \infty. $$ 
+$$ \int_{\mathbf{R}^2} \frac{f(x,y)\Chi_{|D_n}}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y \to I,\quad n \to \infty. $$ 
 
 ### 2.2
 On suppose désormais $f$ à symétrie radiale, c'est à dire telle qu'il existe $g : \mathbf{R} \to \mathbf{R}$ telle que, quel que soit $\theta \in [0,2\pi]$,
@@ -64,11 +64,11 @@ $$ f(r\cos\theta,r\sin\theta) = g(r). $$
 
 Montrer que
 
-$$ I = 2\pi \int_0^1 g(r)\,\mathrm{d}r. $$
+$$ I = 2\pi \int_0^1 g(r)\ \mathrm{d}r. $$
 
 **Réponse.** On passe en polaires sur $D_n$ pour obtenir, après simplification par $r$, Fubini, puis à nouveau convergence monotone,
 
-$$ \int_{D_n} \frac{f(x,y)}{\sqrt{x^2+y^2}}\,\mathrm{d}x\mathrm{d}y = \int_{[1/n,1] \times [0,2\pi] g(r)\,\mathrm{d}r\mathmr{r}\theta = 2\pi\int_{[1/n,1]} g(r)\,\mathrm{d}r \to 2\pi \int_0^1 g(r)\,\mathrm{d}r = I,\quad n \to \infty. $$ 
+$$ \int_{D_n} \frac{f(x,y)}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y = \int_{[1/n,1] \times [0,2\pi] g(r)\ \mathrm{d}r\mathmr{r}\theta = 2\pi\int_{[1/n,1]} g(r)\ \mathrm{d}r \to 2\pi \int_0^1 g(r)\ \mathrm{d}r = I,\quad n \to \infty. $$ 
 
 ### 2.3
 Application : déterminer
@@ -84,7 +84,7 @@ $$ \int_D \frac{\mathrm{d}x \mathrm{d}y}{(x^2+y^2)^{3/4}} = 2\pi\int_0^1 \frac{\
 ## 3.1
 Soit $f$ dans $L^1(\mathbf{R})$ une fonction impaire ($f(-x)=-f(x)$ presque pour tout $x \in \mathbf{R}$). Montrer que $\hat{f}$ est également impaire et que
 
-$$ \hat{f}(\xi) = -2i\int_0^\infty f(x)\sin(2\pi \xi x)\,\mathrm{d}x. $$
+$$ \hat{f}(\xi) = -2i\int_0^\infty f(x)\sin(2\pi \xi x)\ \mathrm{d}x. $$
 
 ## 3.2
 En déduire la transformée de Fourier de $f : \mathbf{R} \to \mathbf{R}$, $f(t) = t e^{-|t|}$.
