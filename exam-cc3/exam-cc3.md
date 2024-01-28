@@ -17,7 +17,9 @@ On se fixe $x$ dans $\mathbf{R}$ ; montrer que l'application $h : t \mapsto f(x-
 
 $$ \int_{\mathbf{R}} |f(x-t)|^p\ \mathrm{d}t = \int_{\mathbf{R}} |f(y)|^p\ \mathrm{d}y < \infty $$
 
-Si $p=\infty$, $$|f(x-t)| \leq \Vert f \Vert_\infty \text{ p.p. } $t$. 
+Si $p=\infty$,
+
+$$|f(x-t)| \leq \Vert f \Vert_\infty \text{ p.p. } t $$. 
 
 ### 1.2
 Soit $x$ dans $\mathbf{R}$ ; à l'aide du théorème de Hölder, montrer que le produit de convolution
