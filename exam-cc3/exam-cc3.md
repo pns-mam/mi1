@@ -66,9 +66,9 @@ Montrer que
 
 $$ I = 2\pi \int_0^1 g(r)\ \mathrm{d}r. $$
 
-**Réponse.** On passe en polaires sur $D_n$ pour obtenir, après simplification par $r$, Fubini, puis à nouveau convergence monotone,
+**Réponse.** On passe en polaires sur $D_n$ pour obtenir, après simplification par $r$, Fubini, puis à nouveau convergence monotone (et unicité de la limite),
 
-$$ \int_{D_n} \frac{f(x,y)}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y = \int_{[1/n,1] \times [0,2\pi]} g(r)\ \mathrm{d}r\mathrm{r}\theta = 2\pi\int_{[1/n,1]} g(r)\ \mathrm{d}r \to 2\pi \int_0^1 g(r)\ \mathrm{d}r = I,\quad n \to \infty. $$ 
+$$ \int_{D_n} \frac{f(x,y)}{\sqrt{x^2+y^2}}\ \mathrm{d}x\mathrm{d}y = \int_{[1/n,1] \times [0,2\pi]} g(r)\ \mathrm{d}r\mathrm{d}\theta = 2\pi\int_{[1/n,1]} g(r)\ \mathrm{d}r \to 2\pi \int_0^1 g(r)\ \mathrm{d}r = I,\quad n \to \infty. $$ 
 
 ### 2.3
 Application : déterminer
