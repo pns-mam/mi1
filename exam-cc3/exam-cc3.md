@@ -136,6 +136,19 @@ $$
 ### 4.1
 Donner l'abscisse de convergence et la transformée de Laplace de la fonction $t \mapsto e^{it}$, $t \geq 0$. En déduire les transformées de Laplace des fonctions $\cos t$ et $\sin t$.
 
+**Réponse.**
+Avec $f:t\mapsto e^{it}$, on a pour tout $s\in \mathbf{C}$ tel que $\mathrm{Re}(s)>0$
+
+$$
+\mathscr{L}f(s)=\int e^{it - s t }\ \mathrm{d} t =\frac{1}{i-s}.
+$$
+
+Rappel, comme $s\in \mathbf{C}$, il est faux en toute généralité que $\mathrm{Re}(\mathscr{L}f(s))=\mathscr{L}\mathrm{Re}(f(s))$. Ce qui fait marcher le calcul ici est que ce choix particulier de $f$ permet d'obtenir $\cos(x)=(f(x)+f(-x))/2$ et $\sin(x)=(f(x)-f(-x))/2i$ et que la transformée de Laplace est linéaire. D'où
+
+$$
+\mathscr{L}\cos (s)=\frac{s}{1+s^2}, \qquad \mathscr{L}\sin (s)=\frac{1}{1+s^2} .
+$$
+
 ### 4.2
 On considère l’équation différentielle ordinaire suivante : trouver $y$ deux fois dérivable telle que
 
@@ -149,5 +162,25 @@ $$ \mathscr{L}y(s) = \frac{A}{s} + \frac{B}{s^2+1} + \frac{Cs}{s^2+1} $$
 
 avec $A$, $B$ et $C$ des réels que l’on précisera.
 
+**Réponse.**
+
+Avec $\mathscr{L}y''(s)=s^2 \mathscr{L} y(s)+1$, on déduit par linéarité de $\mathscr{L}$ que 
+
+$$
+s^2 \mathscr{L} y(s)+1+\mathscr{L} y(s)=\mathscr{L}(t\mapsto 1)(s)=\frac{1}{s}
+$$
+
+puis
+
+$$
+\mathscr{L} y(s)=\frac{1-s}{s(s^2+1)}
+$$
+
+Une décomposition en éléments simples donne $A=1$, $B=-1$, $C=-1$.
+
 ## 4.3
 En déduire la solution $y$ de l’équation différentielle.
+
+**Réponse.**
+
+En inversant la transformée de Laplace terme à terme, on obtient $y(t)=1-\cos(t)-\sin(t)$. On vérifie bien $y(0)=0$, $y'(0)=-1$.
