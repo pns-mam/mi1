@@ -115,7 +115,9 @@ $$
 \int_0^\infty  x e^{(-1+2i\pi \xi) x}\ \mathrm{d}x = - \int_0^\infty   \frac{e^{(-1+2i\pi \xi) x}}{-1+2i\pi \xi }\ \mathrm{d}x =  \frac{1}{(-1+2i\pi \xi )^2}
 $$
 
-Puis $  \dfrac{1}{(-1+2i\pi \xi )^2}=  \dfrac{(-1-2i\pi \xi )^2}{|-1+2i\pi \xi |^4}$ et $\mathrm{Im}\left( \dfrac{1}{(-1+2i\pi \xi )^2}\right)= \dfrac{4\pi \xi}{(1+4\pi^2\xi^2)^2}$, d'où $\hat{f}(\xi)=\dfrac{-8i\pi \xi}{(1+4\pi^2\xi^2)^2}$.
+Puis $\dfrac{1}{(-1+2i\pi \xi )^2} =  \dfrac{(-1-2i\pi \xi )^2}{|-1+2i\pi \xi |^4}$ et 
+$\mathrm{Im}\left( \dfrac{1}{(-1+2i\pi \xi )^2}\right)= \dfrac{4\pi \xi}{(1+4\pi^2\xi^2)^2}$, d'où $\hat{f}(\xi)=\dfrac{-8i\pi \xi}{(1+4\pi^2\xi^2)^2}$.
+
 
 ## 3.3
 Pour la fonction $f$ définie au 3.2, justifier que le produit de convolution $f * f$ est bien défini et déterminer $\widehat{f * f}$.
