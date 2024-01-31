@@ -88,11 +88,46 @@ Soit $f$ dans $L^1(\mathbf{R})$ une fonction impaire ($f(-x)=-f(x)$ presque pour
 
 $$ \hat{f}(\xi) = -2i\int_0^\infty f(x)\sin(2\pi \xi x)\ \mathrm{d}x. $$
 
+**Réponse.**
+
+En passant par le changement de variables u=-x sur le domaine $]-\infty,0]$, on obtient par imparité de $f$:
+
+$$
+ \hat{f}(\xi)=\int_0^\infty f(x)e^{-2i\pi\xi x}\mathrm{d} x+\int_0^\infty f(-u)e^{2i\pi\xi u}\mathrm{d} u=\int_0^\infty f(x)\left(e^{-2i\pi\xi x}-e^{-2i\pi\xi x}\right)\mathrm{d}x
+$$
+
+Avec $e^{-2i\pi\xi x}-e^{-2i\pi\xi x}=-2i\sin(2\pi \xi x)$, on obtient le résultat annoncé.
+
 ## 3.2
 En déduire la transformée de Fourier de $f : \mathbf{R} \to \mathbf{R}$, $f(t) = t e^{-|t|}$.
 
+**Réponse.**
+
+Comme $f$ est impaire, 3.1 s'applique.
+
+$$
+\hat{f}(\xi)=-2i\int_0^\infty  x e^{-x}\sin(2\pi \xi x)\ \mathrm{d}x=-2i \mathrm{Im}\left(\int_0^\infty  x e^{-x}e^{2i\pi \xi x}\ \mathrm{d}x\right)
+$$
+
+Par intégration par partie,
+
+$$
+\int_0^\infty  x e^{(-1+2i\pi \xi) x}\ \mathrm{d}x = - \int_0^\infty   \frac{e^{(-1+2i\pi \xi) x}}{-1+2i\pi \xi }\ \mathrm{d}x =  \frac{1}{(-1+2i\pi \xi )^2}
+$$
+
+Puis $  \dfrac{1}{(-1+2i\pi \xi )^2}=  \dfrac{(-1-2i\pi \xi )^2}{|-1+2i\pi \xi |^4}$ et $\mathrm{Im}\left( \dfrac{1}{(-1+2i\pi \xi )^2}\right)= \dfrac{4\pi \xi}{(1+4\pi^2\xi^2)^2}$, d'où $\hat{f}(\xi)=\dfrac{-8i\pi \xi}{(1+4\pi^2\xi^2)^2}$.
+
 ## 3.3
 Pour la fonction $f$ définie au 3.2, justifier que le produit de convolution $f * f$ est bien défini et déterminer $\widehat{f * f}$.
+
+**Réponse.**
+
+Rappel de cours, si $f\in L^1(\mathbf{R})$, $f * f$ est bien défini et $f * f \in L^1(\mathbf{R})$. De plus, $\widehat{f * f}=(\hat f)^2$
+donc 
+
+$$
+\widehat{f * f}=\dfrac{-64\pi^2\xi^2}{(1+4\pi^2\xi^2)^4}.
+$$
 
 ## Exercice 4 (5 points)
 
