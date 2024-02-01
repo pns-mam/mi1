@@ -106,7 +106,7 @@ En déduire la transformée de Fourier de $f : \mathbf{R} \to \mathbf{R}$, $f(t)
 Comme $f$ est impaire, le 3.1 s'applique.
 
 $$
-\hat{f}(\xi)=-2i\int_0^\infty  x e^{-x}\sin(2\pi \xi x)\ \mathrm{d}x=-2i \mathrm{Im}\left(\int_0^\infty  x e^{-x}e^{2i\pi \xi x}\ \mathrm{d}x\right)
+\hat{f}(\xi)=-2i\int_0^\infty  x e^{-x}\sin(2\pi \xi x)\ \mathrm{d}x=-2i \mathrm{Im}\left(\int_0^\infty  x e^{-x}e^{2i\pi \xi x}\ \mathrm{d}x\right).
 $$
 
 Par intégration par parties,
@@ -167,7 +167,7 @@ avec $A$, $B$ et $C$ des réels que l’on précisera.
 Avec $\mathscr{L}y''(s)=s^2 \mathscr{L} y(s)+1$, on déduit par linéarité de $\mathscr{L}$ que 
 
 $$
-s^2 \mathscr{L} y(s)+1+\mathscr{L} y(s)=\mathscr{L}(t\mapsto 1)(s)=\frac{1}{s}
+s^2 \mathscr{L} y(s)+1+\mathscr{L} y(s)=\mathscr{L}(1)(s)=\frac{1}{s}
 $$
 
 puis
