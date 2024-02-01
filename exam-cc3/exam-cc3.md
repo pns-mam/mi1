@@ -90,10 +90,10 @@ $$ \hat{f}(\xi) = -2i\int_0^\infty f(x)\sin(2\pi \xi x)\ \mathrm{d}x. $$
 
 **Réponse.**
 
-En passant par le changement de variables u=-x sur le domaine $]-\infty,0]$, on obtient par imparité de $f$:
+En passant par le changement de variables $u =-x$ sur le domaine $]-\infty,0]$, on obtient par imparité de $f$,
 
 $$
- \hat{f}(\xi)=\int_0^\infty f(x)e^{-2i\pi\xi x}\mathrm{d} x+\int_0^\infty f(-u)e^{2i\pi\xi u}\mathrm{d} u=\int_0^\infty f(x)\left(e^{-2i\pi\xi x}-e^{-2i\pi\xi x}\right)\mathrm{d}x
+ \hat{f}(\xi)=\int_0^\infty f(x)e^{-2i\pi\xi x}\mathrm{d} x+\int_0^\infty f(-u)e^{2i\pi\xi u}\mathrm{d} u=\int_0^\infty f(x)\left(e^{-2i\pi\xi x}-e^{-2i\pi\xi x}\right)\mathrm{d}x.
 $$
 
 Avec $e^{-2i\pi\xi x}-e^{-2i\pi\xi x}=-2i\sin(2\pi \xi x)$, on obtient le résultat annoncé.
@@ -103,20 +103,20 @@ En déduire la transformée de Fourier de $f : \mathbf{R} \to \mathbf{R}$, $f(t)
 
 **Réponse.**
 
-Comme $f$ est impaire, 3.1 s'applique.
+Comme $f$ est impaire, le 3.1 s'applique.
 
 $$
 \hat{f}(\xi)=-2i\int_0^\infty  x e^{-x}\sin(2\pi \xi x)\ \mathrm{d}x=-2i \mathrm{Im}\left(\int_0^\infty  x e^{-x}e^{2i\pi \xi x}\ \mathrm{d}x\right)
 $$
 
-Par intégration par partie,
+Par intégration par parties,
 
 $$
-\int_0^\infty  x e^{(-1+2i\pi \xi) x}\ \mathrm{d}x = - \int_0^\infty   \frac{e^{(-1+2i\pi \xi) x}}{-1+2i\pi \xi }\ \mathrm{d}x =  \frac{1}{(-1+2i\pi \xi )^2}
+\int_0^\infty  x e^{(-1+2i\pi \xi) x}\ \mathrm{d}x = - \int_0^\infty   \frac{e^{(-1+2i\pi \xi) x}}{-1+2i\pi \xi }\ \mathrm{d}x =  \frac{1}{(-1+2i\pi \xi )^2}.
 $$
 
 Puis $\dfrac{1}{(-1+2i\pi \xi )^2} =  \dfrac{(-1-2i\pi \xi )^2}{|-1+2i\pi \xi |^4}$ et 
-$\mathrm{Im}\left( \dfrac{1}{(-1+2i\pi \xi )^2}\right)= \dfrac{4\pi \xi}{(1+4\pi^2\xi^2)^2}$, d'où $\hat{f}(\xi)=\dfrac{-8i\pi \xi}{(1+4\pi^2\xi^2)^2}$.
+$\mathrm{Im}\left( \dfrac{1}{(-1+2i\pi \xi )^2}\right)= \dfrac{4\pi \xi}{(1+4\pi^2\xi^2)^2}$, d'où $\hat{f}(\xi)=\dfrac{-8i\pi \xi}{(1+4\pi^2\xi^2)^2} \cdot$
 
 
 ## 3.3
@@ -128,7 +128,7 @@ Rappel de cours, si $f\in L^1(\mathbf{R})$, $f * f$ est bien défini et $f * f \
 donc 
 
 $$
-\widehat{f * f}=\dfrac{-64\pi^2\xi^2}{(1+4\pi^2\xi^2)^4}.
+\widehat{f * f}=\dfrac{-64\pi^2\xi^2}{(1+4\pi^2\xi^2)^4} \cdot
 $$
 
 ## Exercice 4 (5 points)
@@ -140,13 +140,13 @@ Donner l'abscisse de convergence et la transformée de Laplace de la fonction $t
 Avec $f:t\mapsto e^{it}$, on a pour tout $s\in \mathbf{C}$ tel que $\mathrm{Re}(s)>0$
 
 $$
-\mathscr{L}f(s)=\int e^{it - s t }\ \mathrm{d} t =\frac{1}{i-s}.
+\mathscr{L}f(s)=\int e^{it - s t }\ \mathrm{d} t =\frac{1}{i-s} \cdot
 $$
 
 Rappel, comme $s\in \mathbf{C}$, il est faux en toute généralité que $\mathrm{Re}(\mathscr{L}f(s))=\mathscr{L}\mathrm{Re}(f(s))$. Ce qui fait marcher le calcul ici est que ce choix particulier de $f$ permet d'obtenir $\cos(x)=(f(x)+f(-x))/2$ et $\sin(x)=(f(x)-f(-x))/2i$ et que la transformée de Laplace est linéaire. D'où
 
 $$
-\mathscr{L}\cos (s)=\frac{s}{1+s^2}, \qquad \mathscr{L}\sin (s)=\frac{1}{1+s^2} .
+\mathscr{L}\cos (s)=\frac{s}{1+s^2}, \qquad \mathscr{L}\sin (s)=\frac{1}{1+s^2} \cdot
 $$
 
 ### 4.2
@@ -173,7 +173,7 @@ $$
 puis
 
 $$
-\mathscr{L} y(s)=\frac{1-s}{s(s^2+1)}
+\mathscr{L} y(s)=\frac{1-s}{s(s^2+1)} \cdot
 $$
 
 Une décomposition en éléments simples donne $A=1$, $B=-1$, $C=-1$.
