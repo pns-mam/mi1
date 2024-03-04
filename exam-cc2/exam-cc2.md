@@ -22,7 +22,7 @@ $$ \int_0^n \frac{1-\cos(x/n)}{1+x^4}\ \mathrm{d}x $$
 
 $$ f_n(x) := \frac{1-\cos(x/n)}{1+x^4} \chi_{[0,n]}(x) $$
 
-on définit une suite de fonctions intégrables sur $\mathbf{R}_+$ qui converge simplement vers $0$ et sont toutes dominées par la fonction intégrable $1/(1+x^4)$. D'où l'existence de la limite, nulle, par convergence dominée.
+on définit une suite de fonctions intégrables sur $\mathbf{R}_+$ qui converge simplement vers $0$ et sont toutes dominées par la fonction intégrable $2/(1+x^4)$. D'où l'existence de la limite, nulle, par convergence dominée.
 
 ### 1.3
 $$ \int_0^n (1-x/n)^{n^2}\cos(nx)\ \mathrm{d}x $$
