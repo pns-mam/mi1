@@ -29,7 +29,7 @@ $$ \int_0^n (1-x/n)^{n^2}\cos(nx)\ \mathrm{d}x $$
 
 **Réponse.** En posant $f_n(x) := (1-x/n)^{n^2}\cos(nx)\chi_{[0,n]}(x)$, on définit une suite de fonctions intégrables sur $\mathbf{R}+$ qui converge simplement vers $0$ en tout $x > 0$ puisque  $(1-x/n)^{n^2} = e^{n^2\ln(1-x/n)}$ qui tend (équivalent puis composition de limites) vers $\lim_{y \to \infty} e^{-y}=0$. D'où l'existence de la limite, nulle, par convergence dominée puisque, pour tout réel $x$ on a $1-x \leq e^{-x}$ (convexité), de sorte que $0 \leq (1-x/n)^n \leq e^{-x}$ si $x \in [0,n]$ et
 
-$$ 0 \leq (1-x/n)^{n^2} \leq e^{-nx} \leq e^{-x},\quad n \geq 1. $$
+$$ |(1-x/n)^{n^2}\cos(nx)\chi_{[0,n]}(x)| \leq e^{-nx} \leq e^{-x},\quad x \geq 0,\quad n \geq 1. $$
 
 ## Exercice 2 (5 points)
 
