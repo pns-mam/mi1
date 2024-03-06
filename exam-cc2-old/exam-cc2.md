@@ -57,7 +57,7 @@ $$ \int_0^n \frac{nx}{1+e^x}\,\mathrm{d}x $$
 ### 3.1
 Montrer que la fonction
 
-$$ F(t) := \int_0^\infty e^{-tx}\cos x\,\mathrm{d}x $$
+$$ F(t) := \int_0^\infty e^{-tx}\cos x\ \mathrm{d}x $$
 
 est bien définie pour $t \gt 0$.
 
