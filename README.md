@@ -37,17 +37,17 @@
 [TD 10 - Transformée de Laplace](td10/td10.pdf)
 ([corrigé](td10/td10-corr.pdf))
 
-[Exam CC 1](exam-cc1/exam-cc1.md)
+[Exam CC no. 1](exam-cc1/exam-cc1.md)
 
-[Exam CC 2](exam-cc2/exam-cc2.md)
+[Exam CC no. 2](exam-cc2/exam-cc2.md)
 
-[Exam CC 3](exam-cc3/exam-cc3.md)
+[Exam CC np. 3](exam-cc3/exam-cc3.md)
 
-[Exam CC 1 (2022-23)](exam-cc1-old/exam-cc1.pdf)
+[Exam CC no. 1 (2022-23)](exam-cc1-old/exam-cc1.pdf)
 
-[Exam CC 2 (2022-23)](exam-cc2-old/exam-cc2.md)
+[Exam CC no. 2 (2022-23)](exam-cc2-old/exam-cc2.md)
 
-[Exam CC 3 (2022-23)](exam-cc3-old/exam-cc3.md)
+[Exam CC no. 3 (2022-23)](exam-cc3-old/exam-cc3.md)
 
 # Bibliographie[^1]
 [Féjoz, J. Chapitres d'intégration et probabilités](https://www.ceremade.dauphine.fr/~fejoz/Integration/integration-probabilites.pdf)
