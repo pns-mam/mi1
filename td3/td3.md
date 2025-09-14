@@ -3,7 +3,7 @@
 ## MAM3
 
 # Mathématiques de l'ingénieur.e 1
-# 2024-25
+# 2025-26
 # TD 3 - Mesures
 
 ## Exercice 1

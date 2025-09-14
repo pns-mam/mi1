@@ -4,7 +4,7 @@
 
 # Mathématiques de l'ingénieur.e 1
 
-# 2024-25
+# 2025-26
 
 # TD 4 - Convergence
 
