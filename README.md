@@ -10,9 +10,9 @@
     
 [TD 1 - Intégrales généralisées](td1/td1.md) ([corrigé](td1/td1-corr.pdf))
 
-[TD 2 - Intégrales multiples](td2/td2.md)
+[TD 2 - Intégrales multiples](td2/td2.md) ([corrigé](td2/td2-corr.pdf))
 
-[TD 3 - Mesures](td3/td3.md)
+[TD 3 - Mesures](td3/td3.md) ([corrigé](td3/td3-corr.pdf))
 
 [TD 4 - Convergence](td4/td4.md)
 
