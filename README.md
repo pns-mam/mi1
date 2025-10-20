@@ -28,6 +28,8 @@
 
 [TD 10 - Équation de la chaleur](td10/td10.md)
 
+[Exam CC no. 1](exam-cc1/exam-cc1.pdf)
+
 [Exam CC no. 1 (2024-25)](exam-cc1-old/exam-cc1.md)
 
 [Exam CC no. 2 (2024-25)](exam-cc2-old/exam-cc2.md)
