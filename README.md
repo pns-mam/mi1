@@ -16,9 +16,9 @@
 
 [TD 4 - Convergence](td4/td4.md)
 
-[TD 5 - Intégrales à paramètre](td5/td5.md)
+[TD 5 - Intégrales à paramètre](td5/td5.md) ([corrigé](td5/td5-corr.pdf))
 
-[TD 6 - Espaces Lp](td6/td6.md)
+[TD 6 - Espaces Lp](td6/td6.md) ([corrigé](td6/td6-corr.pdf))
 
 [TD 7 - Fubini](td7/td7.md)
 
