@@ -31,7 +31,7 @@ $$ \int_D \frac{x\ \mathrm{d}x\mathrm{d}y}{y+x^2} $$
 où $D := \lbrace (x,y) \in \mathbf{R}^2\ |\ 0 \leq x \leq 1,\ 1 \leq y \leq 3 \rbrace$.
 
 
-**Réponse.** $D$ est un domaine compact, $f(x,y)= \frac{x\ }{y+x^2} $ est continue sur $D$, donc bornée et  intégrable.
+**Réponse.** $D$ est un domaine compact, $f(x,y)=\frac{x}{y+x^2}$ est continue sur $D$, donc bornée et  intégrable.
 Par conséquent the théorème de Fubini implique
 
 $$ \int_D \frac{x\ \mathrm{d}x\mathrm{d}y}{y+x^2} =\int_1^3\left(\int_0^1 \frac{x\ \mathrm{d}x}{y+x^2}\right)\mathrm{d}y.$$
