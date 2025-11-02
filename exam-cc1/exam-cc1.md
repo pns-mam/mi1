@@ -46,6 +46,10 @@ $$ \int_D \frac{xy\ \mathrm{d}x\mathrm{d}y}{1+y^2} $$
 
 où $D := \lbrace (x,y) \in \mathbf{R}^2\ |\ 1 \leq x \leq 2,\ 0 \leq y \leq 1 \rbrace$.
 
+**Réponse.**  $D$ est le domaine compact $[1,2]\times [0,1]$. La fonction $f(x,y)=\frac{x y }{1+y^2}$ est continue sur $\mathbf{R}^2$, donc bornée et intégrable sur le domaine $D$ (alternative : $0\leq f \leq 1$ sur D compact, donc $f$ est intégrable). Le théorème de Fubini s'applique pour donner (les variables étant de plus séparables) :
+
+$$ \int_D \frac{xy\ \mathrm{d}x\mathrm{d}y}{1+y^2} =\left( \int_1^{2} x \ \mathrm{d}x \right) \left( \int_0^{1} \frac{1}{2} \frac{2 y\ \mathrm{d}y}{1+y^2}\right) = \frac{3}{2}\cdot \frac{1}{2}  \left[ \ln (1+y^2)\right]_0^1 = \frac{3}{4} \ln 2.$$
+
 # Exercice 3 (6 points)
 
 ## 3.1
