@@ -19,11 +19,23 @@ Montrer que l'intégrale impropre ci-dessous est convergente et déterminer sa v
 
 $$ \int_1^{\infty} \frac{\mathrm{d}x}{1 + x^2} \cdot $$
 
+**Réponse.** La fonction $f(x)=\frac{1}{1 + x^2}$ est positive continue bornée sur $[1,+\infty[$ donc elle est intégrable si $\int_1^{A} \frac{\mathrm{d}x}{1 + x^2}$ admet une limite finie quand $A\to \infty$. Or
+
+$$ \int_1^{A} \frac{\mathrm{d}x}{1 + x^2} = \left[\arctan x\right]_1^A= \arctan A - \frac{\pi}{4} \xrightarrow[A\to \infty]{} \frac{\pi}{4}.$$
+
+L'intégrale est donc convergente et vaut $\frac{\pi}{4}$.
+
 ## 1.2
 
 En déduire que l'intégrale impropre ci-dessous est également convergente et déterminer sa valeur :
 
-$$ \int_0^{\infty} \frac{e^t\,\mathrm{d}t}{1 + e^{2t}} \cdot $$
+$$ \int_0^{\infty} \frac{e^t\ \mathrm{d}t}{1 + e^{2t}} \cdot $$
+
+**Réponse.** La fonction $g(t)=\frac{e^t}{1 + e^{2t}}$ est positive continue bornée sur $[0,+\infty[$. On effectue sur l'ouvert $]0,A[$ le changement de variable $e^t=x$, de sorte que $e^t\,\mathrm{d}t= \mathrm{d}x$ et
+
+$$ \int_0^{A}   \frac{e^t\ \mathrm{d}t}{1 + e^{2t}}= \int_1^{e^A} \frac{\mathrm{d}x}{1 + x^2} = \left[\arctan x\right]_1^{e^A}= \arctan e^A - \frac{\pi}{4} \xrightarrow[A\to \infty]{} \frac{\pi}{4}.$$
+
+L'intégrale est donc convergente et vaut $\frac{\pi}{4}$.
 
 
 # Exercice 2 (4 points)
