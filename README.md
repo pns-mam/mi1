@@ -20,7 +20,7 @@
 
 [TD 6 - Espaces Lp](td6/td6.md) ([corrigé](td6/td6-corr.pdf))
 
-[TD 7 - Fubini](td7/td7.md)
+[TD 7 - Fubini](td7/td7.md) ([corrigé](td7/td7-corr.pdf))
 
 [TD 8 - Transformée de Fourier](td8/td8.md)
 
