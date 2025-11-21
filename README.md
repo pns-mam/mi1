@@ -22,7 +22,7 @@
 
 [TD 7 - Fubini](td7/td7.md) ([corrigé](td7/td7-corr.pdf))
 
-[TD 8 - Transformée de Fourier](td8/td8.md)
+[TD 8 - Transformée de Fourier](td8/td8.md) ([corrigé](td8/td8-corr.pdf))
 
 [TD 9 - Convolution](td9/td9.md)
 
