@@ -47,7 +47,7 @@ En déduire une nouvelle expression de $F$.
 
 Montrer que la fonction ci-dessous appartient à $L^1([0,\infty])$ : 
 
-$$ f(x) := \frac{1}{x(1 + |\ln x|)^2}\,,\quad x \geq 0. $$
+$$ f(x) := \frac{1}{x(1 + |\ln x|)^2}\,,\quad x > 0. $$
 
 ## 3.2
 
