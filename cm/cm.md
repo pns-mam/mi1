@@ -82,13 +82,13 @@ $\hat{f}(\xi):=\int_{\mathbf{R}} f(x)e^{-2i\pi\xi x}\,\mathrm{d}x$
 - prop. : convolution $L^p(\mathbf{R}) * L^q(\mathbf{R})$ avec $1/p+1/q=1+1/r$
 
 ## Ch. 6 - (Très courte) Introduction aux probas
-- th. déf. : mesure image
-- prop. : intégration par rapport à une mesure image
-- th. déf. : mesure à densité
-- prop. : intégration par rapport à une mesure à densité
-- ex. fondamental : espace probabilisé $(\Omega,\mathscr{B},P)$ et variable aléatoire réelle
+- th. déf. : mesure image, formule d'intégration
+- th. déf. : mesure à densité, formule d'intégration
+- ex. fondamental : espace probabilisé $(\Omega,\mathscr{B},P)$, $X$ variable aléatoire (réelle) et loi $P_X$, cas à densité
 - déf. : espérance d'une v.a. intégrable
-- déf. : variance d'une v.a. de carré sommable, et $\text{Var}(X) = E(X^2) - E^2(X)$
-- déf. : densité jointe, densité marginale (Fubini) d'une variable aléatoire vectorielle (vecteur aléatoire)
-- prop. : loi de $Y = g(X)$, $X$ v.a. (changement de variable)
-- ex. : loi de $X + Y$, $X$ et $Y$ v.a. indépendantes
+- déf. : variance d'une v.a. de carré sommable, $V(X) = E(X^2) - E^2(X)$
+- déf. : indépendance de deux v. a.
+- prop. : densité du vecteur aléatoire $(X, Y)$, $X$ et $Y$ v.a. indépendantes à densité
+- prop. : loi de $X + Y$, $X$ et $Y$ v.a. indépendantes à densité
+- rem. : lemme de classe monotone
+
