@@ -90,5 +90,5 @@ $\hat{f}(\xi):=\int_{\mathbf{R}} f(x)e^{-2i\pi\xi x}\,\mathrm{d}x$
 - déf. : indépendance de deux v. a.
 - prop. : densité du vecteur aléatoire $(X, Y)$, $X$ et $Y$ v.a. indépendantes à densité
 - prop. : loi de $X + Y$, $X$ et $Y$ v.a. indépendantes à densité
-- rem. : lemme de classe monotone
+- rem. : lemme de classe monotone (ex. demi-droites sur $\mathbf{R}$, pavés mesurables sur $\mathbf{R}^2$)
 
