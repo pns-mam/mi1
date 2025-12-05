@@ -130,7 +130,7 @@ Effectuer le changement de variable $x = \varphi(y) := \sigma y + m$ dans cette 
 [**Indication** : on pourra retrouver cette valeur à l'aide du théorème de Fubini.]
 
 
-**Réponse.** En effectuant le changement de variable indiqué, on trouve $I=\frac{1}{\sqrt{2\pi}}  \int_{\mathbf{R}}  e^{-y^2/2}\,\mathrm{d}y.$ En changeant une nouvelle fois de variable pour $z=y/\sqrt{2}$, on obtient alors $I=\frac{1}{\sqrt{\pi}} \int_{\mathbf{R}} e^{-z^2}\,\mathrm{d}z$. On reconnais alors l'intégrale de Gauss, d'où $I=1$.
+**Réponse.** En effectuant le changement de variable indiqué, on trouve $I=\frac{1}{\sqrt{2\pi}}  \int_{\mathbf{R}}  e^{-y^2/2}\,\mathrm{d}y.$ En changeant une nouvelle fois de variable pour $z=y/\sqrt{2}$, on obtient alors $I=\frac{1}{\sqrt{\pi}} \int_{\mathbf{R}} e^{-z^2}\,\mathrm{d}z$. On reconnait alors l'intégrale de Gauss, d'où $I=1$.
 
 ## 4.2
 
