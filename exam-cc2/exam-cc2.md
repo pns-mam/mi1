@@ -18,13 +18,32 @@ Pour chacune des expressions ci-dessous (où $n \geq 1$) dire si la limite quand
 ### 1.1
 $$ \int_0^\infty \frac{1}{x^n + e^x}\,\mathrm{d}x $$
 
+**Correction.** Soit $f_n(x)= \frac{1}{x^n + e^x}$. Si $0<x<1$, $\lim_{n\to \infty}f_n(x)= \frac{1}{e^x}$. Si $x>1$, $\lim_{n\to \infty}f_n(x)=0$. Pour tout $x\geq 0$, $f_n(x)\leq e^{-x}$ (qui est intégrable). Par le théorème de convergence dominée, 
+
+$$
+\lim_{n\to \infty} \int_0^\infty f_n(x)\,\mathrm{d}x =\int_0^\infty \lim_{n\to \infty}  f_n(x) \,\mathrm{d}x = \int_0^1 e^{-x}\,\mathrm{d}x = 1-1/e.
+$$
+
 ### 1.2
 
 $$ \int_0^\infty \frac{\ln(1+x/n)}{1+x^2}\,\mathrm{d}x $$
 
+**Correction.** $\lim_{n\to \infty} \ln(1+x/n)=0$. De plus $\frac{\ln(1+x/n)}{1+x^2}\leq \frac{\ln(1+x)}{1+x^2}$. La fonction $x\mapsto \frac{\ln(1+x)}{1+x^2}$ est intégrable sur $[0,\infty[$: elle est bien bornée sur ce domaine et un équivalent en $+\infty$ est $\frac{\ln(x)}{x^2}$ qui est intégrable (c'est une intégrale de Bertrand).
+Donc 
+
+$$
+\lim_{n\to \infty} \int_0^\infty \frac{\ln(1+x/n)}{1+x^2}\,\mathrm{d}x =0.
+$$
+
 ### 1.3
 
 $$ \int_0^n \frac{nx}{1+e^{x/n}}\,\mathrm{d}x $$
+
+**Correction.** Soit $f_n(x) = \frac{nx}{1+e^{x/n}} \chi_{[0,n]}(x)$. On a $\frac{(n+1)x}{1+e^{x/(n+1)}}\geq  \frac{nx}{1+e^{x/n}}$ et $\chi_{[0,n+1]}(x)\geq  \chi_{[0,n]}(x)$. Donc $f_{n+1}(x)\geq f_n(x)$. Par ailleurs $\lim_{n\to \infty} f_n(x)=+\infty$ si $x>0$. Donc par le théorème de convergence monotone,
+
+
+$$ \lim_{n\to \infty} \int_0^n \frac{nx}{1+e^{x/n}}\,\mathrm{d}x =+\infty.$$
+
 
 # Exercice 2 (5 points)
 
