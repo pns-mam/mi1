@@ -54,11 +54,21 @@ $$ F(t) := \int_1^\infty \frac{\cos(tx)}{x}e^{-x}\ \mathrm{d}x,\quad t \in \math
 ### 2.1
 Montrer que l'on définit bien ainsi une fonction de $\mathbf{R}$ dans $\mathbf{R}$.
 
+**Correction.** Pour tout $t\in \mathbf{R}, x\in ]1,+\infty[$, soit  $f(t,x)= \frac{\cos(tx)}{x}e^{-x}$. Pour $t\in \mathbf{R}$ fixé, quelque soit $x\in ]1,+\infty[$, $|f(t,x)|\leq e^{-x}$. Or $(x\mapsto e^{-x})\in L^1(1,+\infty)$, donc $x\mapsto f(t,x)\in  L^1(1,+\infty)$ également (toujours en fixant $t$). Donc l'intégrale $F(t)$ est bien définie et finie pour tout $t$.
+
 ### 2.2
 Montrer que $F$ est dérivable sur $\mathbf{R}$ et calculer sa dérivée.
 
+**Correction.** On a $\frac{\partial f}{\partial t}(t,x)=-\sin(t x)e^{-x}$. Encore une fois $|\frac{\partial f}{\partial t}(t,x)|\leq e^{-x}$, et $(x\mapsto e^{-x})\in L^1(1,+\infty)$. Donc le théorème de dérivation des intégrales à paramètre s'applique et 
+
+$$ 
+F'(t) = \int_1^\infty -\sin(t x)e^{-x} \ \mathrm{d}x =\Im \left(\int_1^\infty e^{-(1+it) x}\ \mathrm{d}x\right)=\Im \left( \frac{e^{-(1+it)}}{1+it}\right) = - \frac{t \cos t + \sin t}{e(1+t^2)}.
+$$ 
+
 ### 2.3
 En déduire une nouvelle expression de $F$.
+
+**Correction.** Impossible car erreur dans l'ennoncé.
 
 # Exercice 3 (4 points)
 
