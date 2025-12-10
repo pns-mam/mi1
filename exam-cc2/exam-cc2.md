@@ -68,7 +68,7 @@ $$
 ### 2.3
 En déduire une nouvelle expression de $F$.
 
-**Correction.** Impossible car erreur dans l'ennoncé.
+**Correction.** Impossible car erreur dans l'énoncé.
 
 # Exercice 3 (4 points)
 
