@@ -38,7 +38,7 @@
 
 [Exam CC no. 2 (2024-25)](exam-cc2-old/exam-cc2.md)
 
-[Exam CC no. 3 (2024-25)](exam-cc3-old/exam-cc3.md)
+[Exam CC no. 3 (2024-25)](exam-cc3-old/exam-cc3.md) 
 
 # Bibliographie[^1]
 [Féjoz, J. Chapitres d'intégration et probabilités](https://www.ceremade.dauphine.fr/~fejoz/Integration/integration-probabilites.pdf)
