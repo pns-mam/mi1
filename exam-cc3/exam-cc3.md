@@ -60,6 +60,7 @@ $$\int_0^1 \sum_{n \geq 0} f_n(x)\,\mathrm{d}x = \sum_{n \geq 0} \int_0^1 (-1)^n
 
 ## 2.4
 En déduire la valeur de l'intégrale
+
 $$ \int_0^1 \frac{\ln(1+x)}{x}\mathrm{d}x. $$
 
 **Réponse.** Pour $|x| < 1$, la série de terme général $\frac{(-1)^n x^{n+1}}{n+1}$ converge simplement vers $\ln(1+x)$, de sorte que $\sum_{n \geq 0} f_n(x) = \frac{\ln(1+x)}{x}$ sur $]0,1]$. Par conséquent :
