@@ -34,6 +34,7 @@ $$\int_\mathbf{R} f(y)\left(\int_\mathbf{R} g(x)e^{-2i\pi xy}\,\mathrm{d}x\right
 
 ## 2.1
 Soit $f_n(x) := (-1)^n\frac{x^n}{n+1}$, $x \in \mathbf{R}$, $n \geq 0$. Montrer que
+
 $$ \sum_{n \geq 0} \int_0^1 |f_n(x)|\,\mathrm{d}x < \infty. $$
 
 **Réponse.** On calcule :
