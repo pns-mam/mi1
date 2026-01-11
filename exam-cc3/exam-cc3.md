@@ -16,14 +16,19 @@ Montrer que $\hat{f}g$ et $f\hat{g}$ sont encore dans $L^1(\mathbf{R})$.
 
 ## 1.2
 À l'aide du théorème de Fubini, montrer que
-$$ \int_\mathbf{R} \hat{f}g\,\mathrm{d}x = \int_\mathbf{R} f\hat{g}\,\mathrm{d}x. $$
+$$\int_\mathbf{R} \hat{f}g\,\mathrm{d}x = \int_\mathbf{R} f\hat{g}\,\mathrm{d}x.$$
 
 **Réponse.** Par définition, $\hat{f}(x) = \int_\mathbf{R} f(y)e^{-2i\pi xy}\,\mathrm{d}y$. Donc :
+
 $$\int_\mathbf{R} \hat{f}(x)g(x)\,\mathrm{d}x = \int_\mathbf{R} \left(\int_\mathbf{R} f(y)e^{-2i\pi xy}\,\mathrm{d}y\right)g(x)\,\mathrm{d}x$$
+
 Pour appliquer Fubini, vérifions l'intégrabilité de $|f(y)g(x)e^{-2i\pi xy}| = |f(y)||g(x)|$ sur $\mathbf{R}^2$ :
+
 $$\int_{\mathbf{R}^2} |f(y)||g(x)|\,\mathrm{d}x\,\mathrm{d}y = \left(\int_\mathbf{R} |f(y)|\,\mathrm{d}y\right)\left(\int_\mathbf{R} |g(x)|\,\mathrm{d}x\right) = \|f\|_{L^1}\|g\|_{L^1} < \infty$$
+
 Le théorème de Fubini permet donc d'intervertir les intégrations :
-$$ \int_\mathbf{R} f(y)\left(\int_\mathbf{R} g(x)e^{-2i\pi xy}\,\mathrm{d}x\right)\,\mathrm{d}y = \int_\mathbf{R} f(y)\hat{g}(y)\,\mathrm{d}y$$
+
+$$\int_\mathbf{R} f(y)\left(\int_\mathbf{R} g(x)e^{-2i\pi xy}\,\mathrm{d}x\right)\,\mathrm{d}y = \int_\mathbf{R} f(y)\hat{g}(y)\,\mathrm{d}y$$
 
 # Exercice 2 (6 points)
 
@@ -32,12 +37,16 @@ Soit $f_n(x) := (-1)^n\frac{x^n}{n+1}$, $x \in \mathbf{R}$, $n \geq 0$. Montrer 
 $$ \sum_{n \geq 0} \int_0^1 |f_n(x)|\,\mathrm{d}x < \infty. $$
 
 **Réponse.** On calcule :
+
 $$\int_0^1 |f_n(x)|\,\mathrm{d}x = \int_0^1 \frac{x^n}{n+1}\,\mathrm{d}x = \frac{1}{n+1}\left[\frac{x^{n+1}}{n+1}\right]_0^1 = \frac{1}{(n+1)^2}$$
+
 Donc :
+
 $$\sum_{n \geq 0} \int_0^1 |f_n(x)|\,\mathrm{d}x = \sum_{n \geq 0} \frac{1}{(n+1)^2} < \infty$$
 
 ## 2.2
 En déduire que l'intégrale ci-dessous est bien définie :
+
 $$ \int_0^1 \sum_{n \geq 0} f_n(x)\,\mathrm{d}x. $$
 
 **Réponse.** D'après la question 2.1, $\sum_{n \geq 0} \int_0^1 |f_n(x)|\,\mathrm{d}x < \infty$. Par le théorème de Tonelli, on peut intervertir somme et intégrale, ce qui garantit que $\sum_{n \geq 0} f_n$ est intégrable sur $[0,1]$, donc que $\int_0^1 \sum_{n \geq 0} f_n(x)\,\mathrm{d}x$ est bien définie.
@@ -46,6 +55,7 @@ $$ \int_0^1 \sum_{n \geq 0} f_n(x)\,\mathrm{d}x. $$
 Déterminer la valeur de cette intégrale.
 
 **Réponse.** Par interversion somme-intégrale :
+
 $$\int_0^1 \sum_{n \geq 0} f_n(x)\,\mathrm{d}x = \sum_{n \geq 0} \int_0^1 (-1)^n\frac{x^n}{n+1}\,\mathrm{d}x = \sum_{n \geq 0} \frac{(-1)^n}{(n+1)^2} = \frac{\pi^2}{12}$$
 
 ## 2.4
