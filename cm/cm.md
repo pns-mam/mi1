@@ -11,7 +11,7 @@
 - déf. tribu, espace mesurable
 - ex. tribus grossière et discrète
 - déf. prop. : tribu engendrée
-- ex. boréliens sur la droite (génération par $\{ ]-\infty,a[,\ a \in \mathbf{R} \}$) et la droite achevée
+- ex. boréliens sur la droite (génération par $\{ ]-\infty,a],\ a \in \mathbf{R} \}$) et la droite achevée
 - déf. application mesurable
 - ex. fonctions caractéristiques
 - prop. : mesurabilité de la composée d'applications mesurables
