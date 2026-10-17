@@ -15,6 +15,7 @@
 ([corrigé](td2/td2-corr.pdf))
 
 [TD 3 - Mesures](td3/td3.md)
+([corrigé](td3/td3-corr.pdf))
 
 [TD 4 - Convergence](td4/td4.md)
 
