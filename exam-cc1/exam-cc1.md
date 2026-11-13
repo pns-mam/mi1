@@ -41,7 +41,7 @@ Calculer la dérivée (la matrice jacobienne) de la fonction associée au change
 $$ \varphi(x, y) = (x + y, y). $$
 
 **Réponse.**
-$$ D\varphi(x,y)=\begin{pmatrix}1&1\\0&1\end{pmatrix},\qquad \det D\varphi=1. $$
+$$ \varphi'(x,y)=\begin{pmatrix}1&1\\0&1\end{pmatrix},\qquad \det\varphi'(x,y)=1. $$
 La matrice est constante et inversible : $\varphi$ est un $C^1$-difféomorphisme de $\mathbf{R}^2$ (de réciproque $(u,v)\mapsto(u-v,v)$).
 
 ## 2.2
@@ -52,7 +52,7 @@ $$D = \{(x, y) \in \mathbf{R}^2 \mid 0 \le x \le 1, \, 0 \le y \le 1 - x\}.$$
 
 $$ \int_D \frac{x+y}{1+(x+y)^2} \, \mathrm{d}x\,\mathrm{d}y. $$
 
-**Réponse.** Avec $(u,v)=\varphi(x,y)$, on a $(x,y)\in D\iff x=u-v\ge0,\ y=v\ge0,\ x+y=u\le1$, c'est-à-dire $\varphi(D)=\{0\le v\le u\le1\}$. Comme $|\det D\varphi|=1$, puis par Fubini,
+**Réponse.** Avec $(u,v)=\varphi(x,y)$, on a $(x,y)\in D\iff x=u-v\ge0,\ y=v\ge0,\ x+y=u\le1$, c'est-à-dire $\varphi(D)=\{0\le v\le u\le1\}$. Comme $|\det\varphi'|=1$, puis par Fubini,
 $$ \int_D\frac{x+y}{1+(x+y)^2}\,\mathrm{d}x\,\mathrm{d}y=\int_0^1\frac{u}{1+u^2}\left(\int_0^u\mathrm{d}v\right)\mathrm{d}u=\int_0^1\frac{u^2}{1+u^2}\,\mathrm{d}u=\bigl[u-\arctan u\bigr]_0^1=1-\frac{\pi}{4}. $$
 
 # Exercice 3 (5 points)
@@ -64,7 +64,7 @@ Calculer la dérivée (la matrice jacobienne) de la fonction associée au change
 $$ \varphi(r,\theta,z) := (r\cos\theta,r\sin\theta,z). $$
 
 **Réponse.**
-$$ D\varphi(r,\theta,z)=\begin{pmatrix}\cos\theta&-r\sin\theta&0\\ \sin\theta&r\cos\theta&0\\ 0&0&1\end{pmatrix},\qquad \det D\varphi=r\cos^2\theta+r\sin^2\theta=r. $$
+$$ \varphi'(r,\theta,z)=\begin{pmatrix}\cos\theta&-r\sin\theta&0\\ \sin\theta&r\cos\theta&0\\ 0&0&1\end{pmatrix},\qquad \det\varphi'(r,\theta,z)=r\cos^2\theta+r\sin^2\theta=r. $$
 
 ## 3.2
 En déduire la valeur de
@@ -98,4 +98,4 @@ Donner, sans le justifier, le cardinal de la tribu $\mathscr{B}(\mathscr{A})$ en
 ## 4.3
 Soit $(X,\mathscr{B})$ un espace mesurable, et soit $f : X \to [0,3]$ telle que $f^{-1}([0,1])$ et $f^{-1}(]1,2])$ appartiennent tous deux à $\mathscr{B}$. Que peut-on dire de $f$ ? 
 
-**Réponse.** $\{A\subset[0,3]\mid f^{-1}(A)\in\mathscr B\}$ est une tribu (l'image réciproque commute avec complémentaire et réunion dénombrable) qui contient $\tilde{\mathscr A}$, donc contient $\sigma(\tilde{\mathscr A})=\mathscr B(\mathscr A)$ d'après 4.1. Ainsi $f$ est mesurable de $(X,\mathscr B)$ dans $([0,3],\mathscr B(\mathscr A))$ ; en particulier $f^{-1}(]2,3])\in\mathscr B$ aussi. On ne peut pas en conclure que $f$ est borélienne.
+**Réponse.** $\{A\subset[0,3]\mid f^{-1}(A)\in\mathscr B\}$ est une tribu (l'image réciproque commute avec complémentaire et réunion dénombrable) qui contient $\tilde{\mathscr A}$, donc contient $\sigma(\tilde{\mathscr A})=\mathscr B(\mathscr A)$ d'après 4.1. Ainsi $f$ est mesurable de $(X,\mathscr B)$ dans $([0,3],\mathscr B(\mathscr A))$ ; en particulier $f^{-1}(]2,3])\in\mathscr B$ aussi.
