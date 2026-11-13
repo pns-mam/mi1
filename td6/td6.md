@@ -6,7 +6,7 @@
 
 # 2026-27
 
-# TD 6 - Espaces L^p
+# TD 6 - Espaces $L^p$
 
 ## Exercice 1
 Étudier l'appartenance des fonctions suivantes à $L^1(\mathbb{R})$ et $L^2(\mathbb{R})$ :
