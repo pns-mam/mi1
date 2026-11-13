@@ -31,11 +31,13 @@
 
 [TD 10 - Équation de la chaleur](td10/td10.md)
 
-[Exam CC no. 1 (2025-26)](exam-cc1-old/exam-cc1.md)
+[Exam CC no. 1](exam-cc1/exam-cc1.pdf)
 
-[Exam CC no. 2 (2025-25)](exam-cc2-old/exam-cc2.md)
+[Exam CC no. 1 (2025-26)](exam-cc1-old/exam-cc1.pdf)
 
-[Exam CC no. 3 (2025-26)](exam-cc3-old/exam-cc3.md) 
+[Exam CC no. 2 (2025-25)](exam-cc2-old/exam-cc2.pdf)
+
+[Exam CC no. 3 (2025-26)](exam-cc3-old/exam-cc3.pdf) 
 
 # Bibliographie[^1]
 
