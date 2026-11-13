@@ -12,7 +12,7 @@ Soient $f$ et $g$ dans $L^1(\mathbf{R})$.
 ## 1.1
 Montrer que $\hat{f}g$ et $f\hat{g}$ sont encore dans $L^1(\mathbf{R})$.
 
-**Réponse.** Pour $f \in L^1(\mathbf{R})$, sa transformée de Fourier $\hat{f} \in \mathcal{C}_0(\mathbf{R})$, donc $\hat{f}$ est bornée. Comme $g \in L^1(\mathbf{R})$, on en déduit $\hat{f}g \in L^1(\mathbf{R})$. De même, $f\hat{g} \in L^1(\mathbf{R})$.
+**Réponse.** Pour $f \in L^1(\mathbf{R})$, sa transformée de Fourier $\hat{f} \in \mathscr{C}_0(\mathbf{R})$, donc $\hat{f}$ est bornée. Comme $g \in L^1(\mathbf{R})$, on en déduit $\hat{f}g \in L^1(\mathbf{R})$. De même, $f\hat{g} \in L^1(\mathbf{R})$.
 
 ## 1.2
 À l'aide du théorème de Fubini, montrer que
