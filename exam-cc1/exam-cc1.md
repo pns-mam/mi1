@@ -88,7 +88,7 @@ $$ \tilde{\mathscr{A}} := \lbrace [0,1], ]1,2] \rbrace $$
 
 sont égales.
 
-**Réponse.** Les tribus sont stables par différence et par réunion. D'une part $]1,2]=[0,2]\setminus[0,1]\in\sigma(\mathscr A)$, donc $\tilde{\mathscr A}\subset\sigma(\mathscr A)$ et $\sigma(\tilde{\mathscr A})\subset\sigma(\mathscr A)$. D'autre part $[0,2]=[0,1]\cup\,]1,2]\in\sigma(\tilde{\mathscr A})$, donc $\mathscr A\subset\sigma(\tilde{\mathscr A})$ et $\sigma(\mathscr A)\subset\sigma(\tilde{\mathscr A})$. D'où l'égalité.
+**Réponse.** Les tribus sont stables par différence et par réunion. D'une part $]1,2]=[0,2]\setminus[0,1]\in\mathscr{B}(\mathscr A)$, donc $\tilde{\mathscr A}\subset\mathscr{B}(\mathscr A)$ et $\mathscr{B}(\tilde{\mathscr A})\subset\mathscr{B}(\mathscr A)$. D'autre part $[0,2]=[0,1]\cup\,]1,2]\in\mathscr{B}(\tilde{\mathscr A})$, donc $\mathscr A\subset\mathscr{B}(\tilde{\mathscr A})$ et $\mathscr{B}(\mathscr A)\subset\mathscr{B}(\tilde{\mathscr A})$. D'où l'égalité.
 
 ## 4.2
 Donner, sans le justifier, le cardinal de la tribu $\mathscr{B}(\mathscr{A})$ engendrée sur $[0,3]$ par $\mathscr{A}$.
@@ -98,4 +98,4 @@ Donner, sans le justifier, le cardinal de la tribu $\mathscr{B}(\mathscr{A})$ en
 ## 4.3
 Soit $(X,\mathscr{B})$ un espace mesurable, et soit $f : X \to [0,3]$ telle que $f^{-1}([0,1])$ et $f^{-1}(]1,2])$ appartiennent tous deux à $\mathscr{B}$. Que peut-on dire de $f$ ? 
 
-**Réponse.** $\{A\subset[0,3]\mid f^{-1}(A)\in\mathscr B\}$ est une tribu (l'image réciproque commute avec complémentaire et réunion dénombrable) qui contient $\tilde{\mathscr A}$, donc contient $\sigma(\tilde{\mathscr A})=\mathscr B(\mathscr A)$ d'après 4.1. Ainsi $f$ est mesurable de $(X,\mathscr B)$ dans $([0,3],\mathscr B(\mathscr A))$ ; en particulier $f^{-1}(]2,3])\in\mathscr B$ aussi.
+**Réponse.** $\{A\subset[0,3]\mid f^{-1}(A)\in\mathscr B\}$ est une tribu (l'image réciproque commute avec complémentaire et réunion dénombrable) qui contient $\tilde{\mathscr A}$, donc contient $\mathscr{B}(\tilde{\mathscr A})=\mathscr B(\mathscr A)$ d'après 4.1. Ainsi $f$ est mesurable de $(X,\mathscr B)$ dans $([0,3],\mathscr B(\mathscr A))$ ; en particulier $f^{-1}(]2,3])\in\mathscr B$ aussi.
