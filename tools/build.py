@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build static HTML pages (into docs/) from README.md and the other Markdown files.
 
-- README.md            -> docs/index.html (main page)
+- README.md            -> docs/index.html (main page); Jupyter notebooks (.ipynb) are handled like .md files
 - <dir>/<dir>.md       -> docs/<dir>/index.html (one page per folder)
 - any other <dir>/x.md -> docs/<dir>/x.html (linked from the folder page)
 - PDF, GIF, PNG... are copied as they are; links to .md files are rewritten.
@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "docs"
 TOOLS = ROOT / "tools"
 SKIP = {".git", ".github", "docs", "tools"}
+SOURCES = {".md", ".ipynb"}
 ASSETS = {".pdf", ".png", ".gif", ".jpg", ".jpeg", ".svg", ".csv"}
 LOGOS = ["https://raw.githubusercontent.com/pns-mam/edp1/master/logo-pns.png",
          "http://caillau.perso.math.cnrs.fr/logo-pns.png"]
@@ -80,12 +81,21 @@ def rewrite(text, rel, mds):
         if tgt in mds:                                   # link to a Markdown file
             out = page_of(tgt)
             u = dirurl(out.parent, here) if out.name == "index.html" else relurl(out, here)
-        elif tgt.suffix == ".pdf" and tgt.with_suffix(".md") in mds and MAIN.get(tgt.parent) == tgt.with_suffix(".md"):
+        elif tgt.suffix == ".pdf" and MAIN.get(tgt.parent) is not None and MAIN[tgt.parent].stem == tgt.stem:
             u = dirurl(tgt.parent, here)                  # main PDF of a folder -> its page
         else:
             return m.group(0)                             # asset: same relative path
         return pre + u + ("#" + frag if frag else "") + post
     return LINK.sub(sub, text)
+
+
+def nb_text(raw):
+    """First markdown cell of a notebook (used only for the page title)."""
+    import json
+    for c in json.loads(raw).get("cells", []):
+        if c.get("cell_type") == "markdown":
+            return "".join(c.get("source", []))
+    return ""
 
 
 def title_of(text):
@@ -127,7 +137,7 @@ def nav(rel, mds, allfiles):
 
 def main():
     allfiles = list(files())
-    mds = {f for f in allfiles if f.suffix == ".md"}
+    mds = {f for f in allfiles if f.suffix in SOURCES}
     pick_main(mds)
     if OUT.exists():
         shutil.rmtree(OUT)
@@ -139,15 +149,20 @@ def main():
             (OUT / f).parent.mkdir(parents=True, exist_ok=True)
             shutil.copy(ROOT / f, OUT / f)
     for rel in sorted(mds):
-        text = rewrite((ROOT / rel).read_text(encoding="utf-8"), rel, mds)
+        raw = (ROOT / rel).read_text(encoding="utf-8")
+        nb = rel.suffix == ".ipynb"
+        if nb:   # absolute logo URLs inside notebooks -> local logo
+            text = re.sub(r"https?://[^\s\"')]*/logo-pns\.png", lambda m: relurl("logo-pns.png", rel.parent), raw)
+        else:
+            text = rewrite(raw, rel, mds)
         out = OUT / page_of(rel)
         out.parent.mkdir(parents=True, exist_ok=True)
         root = os.path.relpath(OUT, out.parent).replace(os.sep, "/")
         root = "" if root == "." else root + "/"
-        cmd = ["pandoc", "-f", "gfm+tex_math_dollars", "-t", "html5", "--standalone",
+        cmd = ["pandoc", "-f", "ipynb" if nb else "gfm+tex_math_dollars", "-t", "html5", "--standalone",
                "--template", str(TOOLS / "template.html"), "--mathjax=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js",
                "--highlight-style", "pygments",
-               "-V", f"root={root}", "-V", f"pagetitle={title_of(text)}", "-o", str(out)]
+               "-V", f"root={root}", "-V", f"pagetitle={title_of(nb_text(text) if nb else text)}", "-o", str(out)]
         subprocess.run(cmd, input=text.encode(), check=True)
         html = out.read_text(encoding="utf-8").replace("<!--NAV-->", nav(rel, mds, allfiles))
         out.write_text(html, encoding="utf-8")
