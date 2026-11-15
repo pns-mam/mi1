@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathématiques de l'ingénieur.e 1 – 2026-27</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<main>
+<p><img src="logo-pns.png" alt="PNS" /></p>
+<h2 id="mam3">MAM3</h2>
+<h1 id="mathématiques-de-lingénieure-1">Mathématiques de l'ingénieur.e
+1</h1>
+<h1 id="2026-27">2026-27</h1>
+<p><a
+href="https://github.com/pns-mam/mi1/discussions/1">Discussion</a></p>
+<p><a href="cm/">Plan du cours</a></p>
+<p><a href="td1/">TD 1 - Intégrales généralisées</a> (<a
+href="td1/td1-corr.pdf">corrigé</a>)</p>
+<p><a href="td2/">TD 2 - Intégrales multiples</a> (<a
+href="td2/td2-corr.pdf">corrigé</a>)</p>
+<p><a href="td3/">TD 3 - Mesures</a> (<a
+href="td3/td3-corr.pdf">corrigé</a>)</p>
+<p><a href="td4/">TD 4 - Convergence</a></p>
+<p><a href="td5/">TD 5 - Intégrales à paramètre</a></p>
+<p><a href="td6/">TD 6 - Espaces Lp</a></p>
+<p><a href="td7/">TD 7 - Fubini</a></p>
+<p><a href="td8/">TD 8 - Transformée de Fourier</a></p>
+<p><a href="td9/">TD 9 - Convolution</a></p>
+<p><a href="td10/">TD 10 - Équation de la chaleur</a></p>
+<p><a href="exam-cc1/">Exam CC no. 1</a></p>
+<p><a href="exam-cc1-old/">Exam CC no. 1 (2025-26)</a></p>
+<p><a href="exam-cc2-old/">Exam CC no. 2 (2025-25)</a></p>
+<p><a href="exam-cc3-old/">Exam CC no. 3 (2025-26)</a></p>
+<h1 id="bibliographie">Bibliographie<a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a></h1>
+<p><a href="exo7.emath.fr/cours/ch_intimp.pdf">Exo7, Intégrales
+impropres</a></p>
+<p><a
+href="https://www.ceremade.dauphine.fr/~fejoz/Integration/integration-probabilites.pdf">Féjoz,
+J. Chapitres d'intégration et probabilités</a></p>
+<p><a
+href="https://www.dunod.com/sciences-techniques/analyse-reelle-et-complexe-cours-et-exercices-0">Rudin,
+W. Analyse réelle et complexe</a></p>
+<p><a
+href="https://terrytao.files.wordpress.com/2012/12/gsm-126-tao5-measure-book.pdf">Tao,
+T. An introduction to measure theory</a></p>
+<p><a
+href="https://terrytao.wordpress.com/2009/01/01/245b-notes-0-a-quick-review-of-measure-and-integration-theory">Tao,
+T. A quick review of measure and integration theory</a></p>
+<h1 id="évaluation">Évaluation</h1>
+<p>3 exams CC (tous coeff. 1)</p>
+<h1 id="organisation">Organisation</h1>
+<ul>
+<li>12 séances de CM</li>
+<li>12 séances de TD</li>
+</ul>
+<h1 id="intervenants">Intervenants</h1>
+<ul>
+<li><a href="mailto:jean-baptiste.caillau@univ-cotedazur.fr">J.-B.
+Caillau</a> (CM et TD)</li>
+<li><a href="mailto:ludovic.sacchelli@inria.fr">L. Sacchelli</a>
+(TD)</li>
+</ul>
+<aside id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>cours (beaucoup) plus avancés où vous trouverez tout ce
+qu'il faut<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside>
+</main>
+<script>
+// "Copier" button on every code block
+document.querySelectorAll("pre").forEach(function (pre) {
+  var box = pre.parentElement;
+  if (!box.classList.contains("sourceCode")) {
+    box = document.createElement("div");
+    box.className = "codewrap";
+    pre.parentNode.insertBefore(box, pre);
+    box.appendChild(pre);
+  }
+  var btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "copy-btn";
+  btn.textContent = "Copier";
+  btn.addEventListener("click", function () {
+    var text = (pre.querySelector("code") || pre).textContent;
+    var done = function () { btn.textContent = "Copié !"; setTimeout(function () { btn.textContent = "Copier"; }, 1500); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { btn.textContent = "Erreur"; });
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); done(); } catch (e) { btn.textContent = "Erreur"; }
+      document.body.removeChild(ta);
+    }
+  });
+  box.appendChild(btn);
+});
+</script>
+<footer>Page générée automatiquement à partir des fichiers Markdown du dépôt (pandoc, MathJax).</footer>
+</body>
+</html>

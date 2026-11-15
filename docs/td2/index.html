@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathématiques de l'ingénieur.e 1 – 2026-27 – TD 2 - Intégrales multiples</title>
+<link rel="stylesheet" href="../style.css">
+<script
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+type="text/javascript"></script>
+</head>
+<body>
+<nav><a href="../index.html">← Accueil</a> · <span>Dans ce dossier :</span> <a href="td2-corr.pdf">td2-corr (PDF)</a> · <a href="td2.pdf">td2 (PDF)</a></nav>
+<main>
+<p><img src="../logo-pns.png" alt="PNS" /></p>
+<h2 id="mam3">MAM3</h2>
+<h1 id="mathématiques-de-lingénieure-1">Mathématiques de l'ingénieur.e
+1</h1>
+<h1 id="2026-27">2026-27</h1>
+<h1 id="td-2---intégrales-multiples">TD 2 - Intégrales multiples</h1>
+<h2 id="exercice-1">Exercice 1</h2>
+<p>Calculer l'intégrale</p>
+<p><span class="math display">\[
+I := \int_\Omega \frac{\mathrm{d}x\mathrm{d}y}{(x+y)^3}
+\]</span></p>
+<p>où <span class="math inline">\(\Omega := \lbrace (x,y) \in
+\mathbf{R}^2\ |\ 1 &lt; x &lt; 3,\ y &gt; 2,\ x+y &lt; 5
+\rbrace\)</span>.</p>
+<h2 id="exercice-2">Exercice 2</h2>
+<p>Calculer l'intégrale</p>
+<p><span class="math display">\[
+I := \int_\Omega \frac{z\
+\mathrm{d}x\mathrm{d}y\mathrm{d}z}{\sqrt{x^2+y^2}}
+\]</span></p>
+<p>où <span class="math inline">\(\Omega := \lbrace (x,y,z) \in
+\mathbf{R}^3\ |\ x^2+y^2 &lt; a^2,\ 0 &lt; z &lt; a \rbrace\)</span>
+(avec <span class="math inline">\(a &gt; 0\)</span> fixé) en utilisant
+les coordonnées polaires :</p>
+<p><span class="math display">\[
+x = r\cos\theta,\quad
+y = r\sin\theta,
+\]</span></p>
+<p>avec <span class="math inline">\(r &gt; 0\)</span> et <span
+class="math inline">\(\theta \in ]0,2\pi[\)</span>.</p>
+<h2 id="exercice-3">Exercice 3</h2>
+<p>Calculer l'intégrale</p>
+<p><span class="math display">\[
+I := \int_{\mathbf{R^2}} e^{-a(x^2+y^2)}\ \mathrm{d}x\mathrm{d}y
+\]</span></p>
+<p>(avec <span class="math inline">\(a &gt; 0\)</span> fixé) en
+utilisant les coordonnées polaires. En déduire la valeur de</p>
+<p><span class="math display">\[
+I := \int_{\mathbf{R}} e^{-x^2}\ \mathrm{d}x.
+\]</span></p>
+<h2 id="exercice-4">Exercice 4</h2>
+<p>Calculer l'intégrale</p>
+<p><span class="math display">\[
+I := \int_\Omega
+\frac{\mathrm{d}x\mathrm{d}y\mathrm{d}z}{\sqrt{x^2+y^2+z^2}}
+\]</span></p>
+<p>où <span class="math inline">\(\Omega := \lbrace (x,y,z) \in
+\mathbf{R}^3\ |\ 1 &lt; x^2+y^2+z^2 &lt; 4 \rbrace\)</span> en utilisant
+les coordonnées sphériques :</p>
+<p><span class="math display">\[
+x = r\sin\varphi\cos\theta,\quad
+y = r\sin\varphi\sin\theta,\quad
+z = r\cos\varphi,
+\]</span></p>
+<p>avec <span class="math inline">\(r &gt; 0\)</span>, <span
+class="math inline">\(\varphi \in ]0,\pi[\)</span> et <span
+class="math inline">\(\theta \in ]0,2\pi[\)</span>.</p>
+</main>
+<script>
+// "Copier" button on every code block
+document.querySelectorAll("pre").forEach(function (pre) {
+  var box = pre.parentElement;
+  if (!box.classList.contains("sourceCode")) {
+    box = document.createElement("div");
+    box.className = "codewrap";
+    pre.parentNode.insertBefore(box, pre);
+    box.appendChild(pre);
+  }
+  var btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "copy-btn";
+  btn.textContent = "Copier";
+  btn.addEventListener("click", function () {
+    var text = (pre.querySelector("code") || pre).textContent;
+    var done = function () { btn.textContent = "Copié !"; setTimeout(function () { btn.textContent = "Copier"; }, 1500); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { btn.textContent = "Erreur"; });
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); done(); } catch (e) { btn.textContent = "Erreur"; }
+      document.body.removeChild(ta);
+    }
+  });
+  box.appendChild(btn);
+});
+</script>
+<footer>Page générée automatiquement à partir des fichiers Markdown du dépôt (pandoc, MathJax).</footer>
+</body>
+</html>

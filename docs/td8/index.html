@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathématiques de l'ingénieur.e 1 – 2026-27 – TD 8 - Transformée de Fourier</title>
+<link rel="stylesheet" href="../style.css">
+<script
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+type="text/javascript"></script>
+</head>
+<body>
+<nav><a href="../index.html">← Accueil</a> · <span>Dans ce dossier :</span> <a href="td8.pdf">td8 (PDF)</a></nav>
+<main>
+<p><img src="../logo-pns.png" alt="PNS" /></p>
+<h2 id="mam3">MAM3</h2>
+<h1 id="mathématiques-de-lingénieure-1">Mathématiques de l'ingénieur.e
+1</h1>
+<h1 id="2026-27">2026-27</h1>
+<h1 id="td-8---transformée-de-fourier">TD 8 - Transformée de
+Fourier</h1>
+<h2 id="exercice-1">Exercice 1</h2>
+<h3 id="11">1.1</h3>
+<p>Soit <span class="math inline">\(f \in L^1(\mathbf{R})\)</span>,
+montrer que</p>
+<p><span class="math display">\[ \widehat{\bar{f}}(\xi) =
+\bar{\widehat{f}}(-\xi),\quad \xi \in \mathbf{R}. \]</span></p>
+<h3 id="12">1.2</h3>
+<p>Montrer que si <span class="math inline">\(f\)</span> est réelle et
+paire, sa transformée de Fourier est également réelle et paire et
+que</p>
+<p><span class="math display">\[ \widehat{f}(\xi) = 2\int_0^\infty
+f(x)\cos(2\pi\xi x)\ \mathrm{d}x. \]</span></p>
+<h3 id="13">1.3</h3>
+<p>Montrer que si <span class="math inline">\(f\)</span> est réelle et
+impaire, sa transformée de Fourier est imaginaire pure et impaire et
+que</p>
+<p><span class="math display">\[ \widehat{f}(\xi) =-2i\int_0^\infty
+f(x)\sin(2\pi\xi x)\ \mathrm{d}x. \]</span></p>
+<h2 id="exercice-2">Exercice 2</h2>
+<p>Calculer les transformée de Fourier des fonctions suivantes :</p>
+<h3 id="21">2.1</h3>
+<p><span class="math display">\[ f(x) := \frac{1}{T}
+\chi_{[-T/2,T/2]}(x),\quad x \in \mathbf{R} \]</span></p>
+<h3 id="22">2.2</h3>
+<p><span class="math display">\[ f(x) :=
+e^{-ax}\chi_{[0,\infty[}(x),\quad x \in \mathbf{R} \quad (a &gt; 0)
+\]</span></p>
+<h3 id="23">2.3</h3>
+<p><span class="math display">\[ f(x) := e^{-a|x|},\quad x \in
+\mathbf{R} \quad (a &gt; 0) \]</span></p>
+<h2 id="exercice-3">Exercice 3</h2>
+<h3 id="31">3.1</h3>
+<p>Soit <span class="math inline">\(f \in L^1(\mathbf{R})\)</span>, et
+soient <span class="math inline">\(a\)</span> et <span
+class="math inline">\(b\)</span> deux réels, <span
+class="math inline">\(a \neq 0\)</span>. On pose <span
+class="math inline">\(g(x) := f(ax+b)\)</span>, montrer que</p>
+<p><span class="math display">\[ \widehat{g}(\xi) = \frac{e^{2i\pi
+b/a}}{|a|}\widehat{f}(\xi/a). \]</span></p>
+<h3 id="32">3.2</h3>
+<p>Soit <span class="math inline">\(\Lambda\)</span> la fonction
+triangle,</p>
+<p><span class="math display">\[ \Lambda(x) =
+(1-|x|)\chi_{[-1,1]}(x),\quad x \in \mathbf{R}. \]</span></p>
+<p>Déterminer la transformée de Fourier de <span
+class="math inline">\(\Lambda(2x-1)\)</span>.</p>
+</main>
+<script>
+// "Copier" button on every code block
+document.querySelectorAll("pre").forEach(function (pre) {
+  var box = pre.parentElement;
+  if (!box.classList.contains("sourceCode")) {
+    box = document.createElement("div");
+    box.className = "codewrap";
+    pre.parentNode.insertBefore(box, pre);
+    box.appendChild(pre);
+  }
+  var btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "copy-btn";
+  btn.textContent = "Copier";
+  btn.addEventListener("click", function () {
+    var text = (pre.querySelector("code") || pre).textContent;
+    var done = function () { btn.textContent = "Copié !"; setTimeout(function () { btn.textContent = "Copier"; }, 1500); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { btn.textContent = "Erreur"; });
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); done(); } catch (e) { btn.textContent = "Erreur"; }
+      document.body.removeChild(ta);
+    }
+  });
+  box.appendChild(btn);
+});
+</script>
+<footer>Page générée automatiquement à partir des fichiers Markdown du dépôt (pandoc, MathJax).</footer>
+</body>
+</html>

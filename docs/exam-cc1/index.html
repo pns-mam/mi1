@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathématiques de l'ingénieur.e 1 – 2026-27 – Exam CC no. 1</title>
+<link rel="stylesheet" href="../style.css">
+<script
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+type="text/javascript"></script>
+</head>
+<body>
+<nav><a href="../index.html">← Accueil</a> · <span>Dans ce dossier :</span> <a href="exam-cc1.pdf">exam-cc1 (PDF)</a></nav>
+<main>
+<p><img src="../logo-pns.png" alt="PNS" /></p>
+<h2 id="mam3">MAM3</h2>
+<h1 id="mathématiques-de-lingénieure-1">Mathématiques de l'ingénieur.e
+1</h1>
+<h1 id="2026-27">2026-27</h1>
+<h1 id="exam-cc-no-1">Exam CC no. 1</h1>
+<p><strong>Durée 2H00. Documents et objets connectés non autorisés. Tous
+les exercices sont indépendants. Le barème prévisionnel est indiqué pour
+chaque exercice.</strong></p>
+<p><strong>Rendre sur des copies séparées les exercices 1 et 2 d'une
+part, 3 et 4 d'autre part.</strong></p>
+<h1 id="exercice-1-4-points">Exercice 1 (4 points)</h1>
+<h2 id="11">1.1</h2>
+<p>Montrer que l'intégrale impropre ci-dessous est convergente et
+déterminer sa valeur (on note <span class="math inline">\(e =
+\exp(1)\)</span>)</p>
+<p><span class="math display">\[ \int_e^{\infty}
+\frac{\mathrm{d}x}{x\ln^2x} \cdot \]</span></p>
+<p><strong>Réponse.</strong> La fonction <span
+class="math inline">\(x\mapsto 1/(x\ln^2x)\)</span> est continue sur
+<span class="math inline">\([e,\infty[\)</span> et <span
+class="math inline">\(x\mapsto -1/\ln x\)</span> en est une primitive.
+Pour <span class="math inline">\(A\ge e\)</span>, <span
+class="math display">\[ \int_e^A \frac{\mathrm{d}x}{x\ln^2x} =
+\left[-\frac{1}{\ln x}\right]_e^A = 1-\frac{1}{\ln
+A}\xrightarrow[A\to\infty]{}1, \]</span> donc l'intégrale converge et
+vaut <span class="math inline">\(1\)</span>.</p>
+<h2 id="12">1.2</h2>
+<p>En déduire, à l'aide d'un changement de variable approprié, que
+l'intégrale impropre ci-dessous est également convergente et déterminer
+sa valeur :</p>
+<p><span class="math display">\[ \int_0^{1/e} \frac{\mathrm{d}x}{x\ln^2
+x} \cdot \]</span></p>
+<p><strong>Réponse.</strong> On pose <span
+class="math inline">\(x=1/t\)</span> (difféomorphisme <span
+class="math inline">\(C^1\)</span> décroissant de <span
+class="math inline">\(]e,\infty[\)</span> sur <span
+class="math inline">\(]0,1/e[\)</span>, <span
+class="math inline">\(\mathrm{d}x=-\mathrm{d}t/t^2\)</span>). Comme
+<span class="math inline">\(\ln^2x=\ln^2t\)</span>, on a <span
+class="math inline">\(\dfrac{\mathrm{d}x}{x\ln^2x}=-\dfrac{\mathrm{d}t}{t\ln^2t}\)</span>
+et, pour <span class="math inline">\(0&lt;\varepsilon&lt;1/e\)</span>,
+<span class="math display">\[
+\int_\varepsilon^{1/e}\frac{\mathrm{d}x}{x\ln^2x}=\int_e^{1/\varepsilon}\frac{\mathrm{d}t}{t\ln^2t}\xrightarrow[\varepsilon\to0^+]{}1
+\]</span> d'après 1.1. L'intégrale converge donc et vaut <span
+class="math inline">\(1\)</span>.</p>
+<h1 id="exercice-2-5-points">Exercice 2 (5 points)</h1>
+<h2 id="21">2.1</h2>
+<p>Calculer la dérivée (la matrice jacobienne) de la fonction associée
+au changement de variables</p>
+<p><span class="math display">\[ \varphi(x, y) = (x + y, y).
+\]</span></p>
+<p><strong>Réponse.</strong> <span class="math display">\[
+\varphi&#39;(x,y)=\begin{pmatrix}1&amp;1\\0&amp;1\end{pmatrix},\qquad
+\det\varphi&#39;(x,y)=1. \]</span> La matrice est constante et
+inversible : <span class="math inline">\(\varphi\)</span> est un <span
+class="math inline">\(C^1\)</span>-difféomorphisme de <span
+class="math inline">\(\mathbf{R}^2\)</span> (de réciproque <span
+class="math inline">\((u,v)\mapsto(u-v,v)\)</span>).</p>
+<h2 id="22">2.2</h2>
+<p>Soit <span class="math inline">\(D\)</span> le domaine du plan défini
+par : <span class="math display">\[D = \{(x, y) \in \mathbf{R}^2 \mid 0
+\le x \le 1, \, 0 \le y \le 1 - x\}.\]</span></p>
+<p>À l'aide du changement de variable précédent, calculer</p>
+<p><span class="math display">\[ \int_D \frac{x+y}{1+(x+y)^2} \,
+\mathrm{d}x\,\mathrm{d}y. \]</span></p>
+<p><strong>Réponse.</strong> Avec <span
+class="math inline">\((u,v)=\varphi(x,y)\)</span>, on a <span
+class="math inline">\((x,y)\in D\iff x=u-v\ge0,\ y=v\ge0,\
+x+y=u\le1\)</span>, c'est-à-dire <span
+class="math inline">\(\varphi(D)=\{0\le v\le u\le1\}\)</span>. Comme
+<span class="math inline">\(|\det\varphi&#39;|=1\)</span>, puis par
+Fubini, <span class="math display">\[
+\int_D\frac{x+y}{1+(x+y)^2}\,\mathrm{d}x\,\mathrm{d}y=\int_0^1\frac{u}{1+u^2}\left(\int_0^u\mathrm{d}v\right)\mathrm{d}u=\int_0^1\frac{u^2}{1+u^2}\,\mathrm{d}u=\bigl[u-\arctan
+u\bigr]_0^1=1-\frac{\pi}{4}. \]</span></p>
+<h1 id="exercice-3-5-points">Exercice 3 (5 points)</h1>
+<h2 id="31">3.1</h2>
+<p>Calculer la dérivée (la matrice jacobienne) de la fonction associée
+au changement de coordonnées cylindriques :</p>
+<p><span class="math display">\[ \varphi(r,\theta,z) :=
+(r\cos\theta,r\sin\theta,z). \]</span></p>
+<p><strong>Réponse.</strong> <span class="math display">\[
+\varphi&#39;(r,\theta,z)=\begin{pmatrix}\cos\theta&amp;-r\sin\theta&amp;0\\
+\sin\theta&amp;r\cos\theta&amp;0\\ 0&amp;0&amp;1\end{pmatrix},\qquad
+\det\varphi&#39;(r,\theta,z)=r\cos^2\theta+r\sin^2\theta=r.
+\]</span></p>
+<h2 id="32">3.2</h2>
+<p>En déduire la valeur de</p>
+<p><span class="math display">\[ \int_D
+\frac{zx^2\,\mathrm{d}x\mathrm{d}y\mathrm{d}z}{\sqrt{x^2 + y^2}}
+\]</span></p>
+<p>où <span class="math inline">\(D := \lbrace (x,y,z) \in \mathbf{R}^3\
+|\ 1 \leq x^2+y^2 \leq 4,\ 2 \leq z \leq 3 \rbrace\)</span>.</p>
+<p><strong>Réponse.</strong> <span class="math inline">\(D\)</span> est
+l'image par <span class="math inline">\(\varphi\)</span> de <span
+class="math inline">\([1,2]\times[0,2\pi]\times[2,3]\)</span> (au bord
+près, de mesure nulle). Sur <span class="math inline">\(D\)</span>,
+<span class="math inline">\(\sqrt{x^2+y^2}=r\)</span> et <span
+class="math inline">\(x^2=r^2\cos^2\theta\)</span>, donc l'intégrande
+vaut <span class="math inline">\(z\,r\cos^2\theta\)</span>, et avec le
+jacobien <span class="math inline">\(r\)</span> : <span
+class="math display">\[
+\int_D\frac{zx^2}{\sqrt{x^2+y^2}}\,\mathrm{d}x\,\mathrm{d}y\,\mathrm{d}z=\int_2^3z\,\mathrm{d}z\int_1^2r^2\,\mathrm{d}r\int_0^{2\pi}\cos^2\theta\,\mathrm{d}\theta=\frac52\cdot\frac73\cdot\pi=\frac{35\pi}{6}.
+\]</span></p>
+<h1 id="exercice-4-6-points">Exercice 4 (6 points)</h1>
+<p>On considère la famille de parties de <span
+class="math inline">\([0,3]\)</span> suivante :</p>
+<p><span class="math display">\[ \mathscr{A} := \lbrace [0,1], [0, 2]
+\rbrace. \]</span></p>
+<h2 id="41">4.1</h2>
+<p>Montrer que les tribus engendrées sur <span
+class="math inline">\([0,3]\)</span> par <span
+class="math inline">\(\mathscr{A}\)</span> et</p>
+<p><span class="math display">\[ \tilde{\mathscr{A}} := \lbrace [0,1],
+]1,2] \rbrace \]</span></p>
+<p>sont égales.</p>
+<p><strong>Réponse.</strong> Les tribus sont stables par différence et
+par réunion. D'une part <span
+class="math inline">\(]1,2]=[0,2]\setminus[0,1]\in\mathscr{B}(\mathscr
+A)\)</span>, donc <span class="math inline">\(\tilde{\mathscr
+A}\subset\mathscr{B}(\mathscr A)\)</span> et <span
+class="math inline">\(\mathscr{B}(\tilde{\mathscr
+A})\subset\mathscr{B}(\mathscr A)\)</span>. D'autre part <span
+class="math inline">\([0,2]=[0,1]\cup\,]1,2]\in\mathscr{B}(\tilde{\mathscr
+A})\)</span>, donc <span class="math inline">\(\mathscr
+A\subset\mathscr{B}(\tilde{\mathscr A})\)</span> et <span
+class="math inline">\(\mathscr{B}(\mathscr
+A)\subset\mathscr{B}(\tilde{\mathscr A})\)</span>. D'où l'égalité.</p>
+<h2 id="42">4.2</h2>
+<p>Donner, sans le justifier, le cardinal de la tribu <span
+class="math inline">\(\mathscr{B}(\mathscr{A})\)</span> engendrée sur
+<span class="math inline">\([0,3]\)</span> par <span
+class="math inline">\(\mathscr{A}\)</span>.</p>
+<p><strong>Réponse.</strong> <span
+class="math inline">\(\operatorname{card}\mathscr B(\mathscr
+A)=2^3=8\)</span> (la tribu est engendrée par la partition <span
+class="math inline">\([0,1]\)</span>, <span
+class="math inline">\(]1,2]\)</span>, <span
+class="math inline">\(]2,3]\)</span>).</p>
+<h2 id="43">4.3</h2>
+<p>Soit <span class="math inline">\((X,\mathscr{B})\)</span> un espace
+mesurable, et soit <span class="math inline">\(f : X \to [0,3]\)</span>
+telle que <span class="math inline">\(f^{-1}([0,1])\)</span> et <span
+class="math inline">\(f^{-1}(]1,2])\)</span> appartiennent tous deux à
+<span class="math inline">\(\mathscr{B}\)</span>. Que peut-on dire de
+<span class="math inline">\(f\)</span> ?</p>
+<p><strong>Réponse.</strong> <span
+class="math inline">\(\{A\subset[0,3]\mid f^{-1}(A)\in\mathscr
+B\}\)</span> est une tribu (l'image réciproque commute avec
+complémentaire et réunion dénombrable) qui contient <span
+class="math inline">\(\tilde{\mathscr A}\)</span>, donc contient <span
+class="math inline">\(\mathscr{B}(\tilde{\mathscr A})=\mathscr
+B(\mathscr A)\)</span> d'après 4.1. Ainsi <span
+class="math inline">\(f\)</span> est mesurable de <span
+class="math inline">\((X,\mathscr B)\)</span> dans <span
+class="math inline">\(([0,3],\mathscr B(\mathscr A))\)</span> ; en
+particulier <span class="math inline">\(f^{-1}(]2,3])\in\mathscr
+B\)</span> aussi.</p>
+</main>
+<script>
+// "Copier" button on every code block
+document.querySelectorAll("pre").forEach(function (pre) {
+  var box = pre.parentElement;
+  if (!box.classList.contains("sourceCode")) {
+    box = document.createElement("div");
+    box.className = "codewrap";
+    pre.parentNode.insertBefore(box, pre);
+    box.appendChild(pre);
+  }
+  var btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "copy-btn";
+  btn.textContent = "Copier";
+  btn.addEventListener("click", function () {
+    var text = (pre.querySelector("code") || pre).textContent;
+    var done = function () { btn.textContent = "Copié !"; setTimeout(function () { btn.textContent = "Copier"; }, 1500); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { btn.textContent = "Erreur"; });
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); done(); } catch (e) { btn.textContent = "Erreur"; }
+      document.body.removeChild(ta);
+    }
+  });
+  box.appendChild(btn);
+});
+</script>
+<footer>Page générée automatiquement à partir des fichiers Markdown du dépôt (pandoc, MathJax).</footer>
+</body>
+</html>

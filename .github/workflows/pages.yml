@@ -1,0 +1,38 @@
+# Rebuild the static site (docs/) from the Markdown files and commit it.
+# GitHub Pages is then served from the folder /docs of the branch main.
+name: Build site
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
+      - name: Build docs/
+        run: python3 tools/build.py
+      - name: Commit docs/ if it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "docs/ is up to date"
+          else
+            git commit -m "Rebuild site (docs/)"
+            git push
+          fi

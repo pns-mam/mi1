@@ -1,0 +1,2 @@
+# Files (relative paths, one per line) to keep off the public site, e.g. solutions or exams:
+# td1/td1-corr.pdf

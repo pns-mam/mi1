@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathématiques de l'ingénieur.e 1 – 2025-26 – Exam CC no. 1</title>
+<link rel="stylesheet" href="../style.css">
+<script
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+type="text/javascript"></script>
+</head>
+<body>
+<nav><a href="../index.html">← Accueil</a> · <span>Dans ce dossier :</span> <a href="exam-cc1.pdf">exam-cc1 (PDF)</a></nav>
+<main>
+<p><img src="../logo-pns.png" alt="PNS" /></p>
+<h2 id="mam3">MAM3</h2>
+<h1 id="mathématiques-de-lingénieure-1">Mathématiques de l'ingénieur.e
+1</h1>
+<h1 id="2025-26">2025-26</h1>
+<h1 id="exam-cc-no-1">Exam CC no. 1</h1>
+<p><strong>Durée 2H00. Documents non autorisés. Tous les exercices sont
+indépendants. Le barème prévisionnel est indiqué pour chaque
+exercice.</strong></p>
+<p><strong>Rendre sur des copies séparées les exercices 1 et 2 d'une
+part, 3 et 4 d'autre part.</strong></p>
+<h1 id="exercice-1-4-points">Exercice 1 (4 points)</h1>
+<h2 id="11">1.1</h2>
+<p>Montrer que l'intégrale impropre ci-dessous est convergente et
+déterminer sa valeur :</p>
+<p><span class="math display">\[ \int_1^{\infty} \frac{\mathrm{d}x}{1 +
+x^2} \cdot \]</span></p>
+<p><strong>Réponse.</strong> La fonction <span
+class="math inline">\(f(x)=\frac{1}{1 + x^2}\)</span> est positive
+continue bornée sur <span class="math inline">\([1,+\infty[\)</span>
+donc elle est intégrable si <span class="math inline">\(\int_1^{A}
+\frac{\mathrm{d}x}{1 + x^2}\)</span> admet une limite finie quand <span
+class="math inline">\(A\to \infty\)</span>. Or</p>
+<p><span class="math display">\[ \int_1^{A} \frac{\mathrm{d}x}{1 + x^2}
+= \left[\arctan x\right]_1^A= \arctan A - \frac{\pi}{4}
+\xrightarrow[A\to \infty]{} \frac{\pi}{4}.\]</span></p>
+<p>L'intégrale est donc convergente et vaut <span
+class="math inline">\(\frac{\pi}{4}\)</span>.</p>
+<h2 id="12">1.2</h2>
+<p>En déduire que l'intégrale impropre ci-dessous est également
+convergente et déterminer sa valeur :</p>
+<p><span class="math display">\[ \int_0^{\infty} \frac{e^t\
+\mathrm{d}t}{1 + e^{2t}} \cdot \]</span></p>
+<p><strong>Réponse.</strong> La fonction <span
+class="math inline">\(g(t)=\frac{e^t}{1 + e^{2t}}\)</span> est positive
+continue bornée sur <span class="math inline">\([0,+\infty[\)</span>. On
+effectue sur l'ouvert <span class="math inline">\(]0,A[\)</span> le
+changement de variable <span class="math inline">\(e^t=x\)</span>, de
+sorte que <span class="math inline">\(e^t\,\mathrm{d}t=
+\mathrm{d}x\)</span> et</p>
+<p><span class="math display">\[ \int_0^{A}   \frac{e^t\ \mathrm{d}t}{1
++ e^{2t}}= \int_1^{e^A} \frac{\mathrm{d}x}{1 + x^2} = \left[\arctan
+x\right]_1^{e^A}= \arctan e^A - \frac{\pi}{4} \xrightarrow[A\to
+\infty]{} \frac{\pi}{4}.\]</span></p>
+<p>L'intégrale est donc convergente et vaut <span
+class="math inline">\(\frac{\pi}{4}\)</span>.</p>
+<h1 id="exercice-2-4-points">Exercice 2 (4 points)</h1>
+<p>Calculer</p>
+<p><span class="math display">\[ \int_D \frac{xy\
+\mathrm{d}x\mathrm{d}y}{1+y^2} \]</span></p>
+<p>où <span class="math inline">\(D := \lbrace (x,y) \in \mathbf{R}^2\
+|\ 1 \leq x \leq 2,\ 0 \leq y \leq 1 \rbrace\)</span>.</p>
+<p><strong>Réponse.</strong> <span class="math inline">\(D\)</span> est
+le domaine compact <span class="math inline">\([1,2]\times
+[0,1]\)</span>. La fonction <span class="math inline">\(f(x,y)=\frac{x y
+}{1+y^2}\)</span> est continue sur <span
+class="math inline">\(\mathbf{R}^2\)</span>, donc bornée et intégrable
+sur le domaine <span class="math inline">\(D\)</span> (alternative :
+<span class="math inline">\(0\leq f \leq 1\)</span> sur D compact, donc
+<span class="math inline">\(f\)</span> est intégrable). Le théorème de
+Fubini s'applique pour donner (les variables étant de plus séparables)
+:</p>
+<p><span class="math display">\[ \int_D \frac{xy\
+\mathrm{d}x\mathrm{d}y}{1+y^2} =\left( \int_1^{2} x \ \mathrm{d}x
+\right) \left( \int_0^{1} \frac{1}{2} \frac{2 y\
+\mathrm{d}y}{1+y^2}\right) = \frac{3}{2}\cdot \frac{1}{2}  \left[ \ln
+(1+y^2)\right]_0^1 = \frac{3}{4} \ln 2.\]</span></p>
+<h1 id="exercice-3-6-points">Exercice 3 (6 points)</h1>
+<h2 id="31">3.1</h2>
+<p>Calculer la dérivée (la matrice jacobienne) de la fonction associée
+au changement de coordonnées sphériques :</p>
+<p><span class="math display">\[ \varphi(r,\theta,\varphi) :=
+(r\cos\theta\sin\varphi, r\sin\theta\sin\varphi, r\cos\varphi).
+\]</span></p>
+<h2 id="32">3.2</h2>
+<p>En déduire la valeur de</p>
+<p><span class="math display">\[ \int_D \frac{(x^2 +
+y^2)\,\mathrm{d}x\mathrm{d}y\mathrm{d}z}{\sqrt{x^2 + y^2 + z^2}}
+\]</span></p>
+<p>où <span class="math inline">\(D := \lbrace (x,y,z) \in \mathbf{R}^3\
+|\ 1 \leq x^2+y^2+z^2 \leq 4 \rbrace\)</span>.</p>
+<h1 id="exercice-4-6-points">Exercice 4 (6 points)</h1>
+<p>On considère la famille de parties de <span class="math inline">\([0,
+2]\)</span> suivante :</p>
+<p><span class="math display">\[ \mathscr{A} := \lbrace [0, 1], [1, 2[
+\rbrace. \]</span></p>
+<h2 id="41">4.1</h2>
+<p>Montrer que les tribus engendrées sur <span class="math inline">\([0,
+2]\)</span> par <span class="math inline">\(\mathscr{A}\)</span> et</p>
+<p><span class="math display">\[ \tilde{\mathscr{A}} := \lbrace [0,1[,
+B, ]1, 2[ \rbrace \]</span></p>
+<p>où <span class="math inline">\(B \subset [0, 2]\)</span> est une
+partie que l'on précisera, sont égales.</p>
+<h2 id="42">4.2</h2>
+<p>Donner, sans le justifier, le cardinal de la tribu <span
+class="math inline">\(\mathscr{B}(\mathscr{A})\)</span> engendrée par
+<span class="math inline">\(\mathscr{A}\)</span> sur <span
+class="math inline">\([0, 2]\)</span>.</p>
+<h2 id="43">4.3</h2>
+<p>Soit <span class="math inline">\((X,\mathscr{B})\)</span> un espace
+mesurable, et soit <span class="math inline">\(f : X \to [0,2]\)</span>
+telle que <span class="math inline">\(f^{-1}([0,1])\)</span> et <span
+class="math inline">\(f^{-1}([1,2[)\)</span> appartiennent tous deux à
+<span class="math inline">\(\mathscr{B}\)</span>. Que peut-on dire de
+<span class="math inline">\(f\)</span> ?</p>
+</main>
+<script>
+// "Copier" button on every code block
+document.querySelectorAll("pre").forEach(function (pre) {
+  var box = pre.parentElement;
+  if (!box.classList.contains("sourceCode")) {
+    box = document.createElement("div");
+    box.className = "codewrap";
+    pre.parentNode.insertBefore(box, pre);
+    box.appendChild(pre);
+  }
+  var btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "copy-btn";
+  btn.textContent = "Copier";
+  btn.addEventListener("click", function () {
+    var text = (pre.querySelector("code") || pre).textContent;
+    var done = function () { btn.textContent = "Copié !"; setTimeout(function () { btn.textContent = "Copier"; }, 1500); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { btn.textContent = "Erreur"; });
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand("copy"); done(); } catch (e) { btn.textContent = "Erreur"; }
+      document.body.removeChild(ta);
+    }
+  });
+  box.appendChild(btn);
+});
+</script>
+<footer>Page générée automatiquement à partir des fichiers Markdown du dépôt (pandoc, MathJax).</footer>
+</body>
+</html>
