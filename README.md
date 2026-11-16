@@ -41,7 +41,7 @@
 
 # Bibliographie[^1]
 
-[Exo7, Intégrales impropres](exo7.emath.fr/cours/ch_intimp.pdf)
+[Exo7, Intégrales impropres](https://exo7.emath.fr/cours/ch_intimp.pdf)
 
 [Féjoz, J. Chapitres d'intégration et probabilités](https://www.ceremade.dauphine.fr/~fejoz/Integration/integration-probabilites.pdf)
 
