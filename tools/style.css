@@ -1,37 +1,59 @@
-:root { --fg: #1f2328; --muted: #59636e; --accent: #0b5cad; --bg: #ffffff; --code-bg: #f6f8fa; --rule: #d1d9e0; }
+/* Same minimal academic style as the homepage (caillau.perso.math.cnrs.fr): serif text, one accent colour, light and dark. */
+:root {
+  --bg: #ffffff; --fg: #1c1f21; --muted: #62707a; --accent: #1d6a85; --rule: #e4e9ec;
+  --code-bg: #f6f8fa; --code-fg: #1f2328; --code-rule: #d1d9e0;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Charter, Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #111416; --fg: #e2e8eb; --muted: #98a6ae; --accent: #7cc4dc; --rule: #262e33; }
+}
 * { box-sizing: border-box; }
-html { font-size: 17px; }
-body { margin: 0; background: var(--bg); color: var(--fg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.6; }
-nav { background: var(--code-bg); border-bottom: 1px solid var(--rule); padding: .6rem 1rem; font-size: .9rem; }
+html { font-size: 17px; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--serif); line-height: 1.65; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: .18em; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+
+nav { border-bottom: 1px solid var(--rule); padding: .8rem max(1.25rem, calc((100% - 46rem) / 2 + 1.25rem)); font: .9rem/1.5 var(--sans); color: var(--muted); }
 nav a { margin-right: .2rem; }
 nav span { color: var(--muted); }
-main { max-width: 52rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
-footer { max-width: 52rem; margin: 0 auto; padding: 1rem; color: var(--muted); font-size: .8rem; border-top: 1px solid var(--rule); }
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
-h1, h2, h3, h4 { line-height: 1.25; margin: 1.6em 0 .5em; }
-h1 { font-size: 1.7rem; margin-top: .8em; }
-h2 { font-size: 1.35rem; border-bottom: 1px solid var(--rule); padding-bottom: .2em; }
-h3 { font-size: 1.15rem; }
-main > h2:first-child, main > p:first-child + h2 { color: var(--muted); font-size: 1.1rem; border: 0; margin-bottom: 0; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
+footer { max-width: 46rem; margin: 0 auto; padding: 1rem 1.25rem 2.5rem; color: var(--muted); font: .8rem/1.4 var(--sans); border-top: 1px solid var(--rule); }
+
+h1, h2, h3, h4 { line-height: 1.3; margin: 1.8em 0 .5em; font-weight: 600; }
+h1 { font-size: 1.9rem; margin-top: .8em; letter-spacing: -.01em; }
+h2 { font-size: 1.3rem; border-bottom: 1px solid var(--rule); padding-bottom: .25em; }
+h3 { font-size: 1.1rem; }
+h4 { font-size: 1rem; }
+/* first "## ..." under the logo (e.g. MAM5/M2-INUM): small label */
+main > h2:first-child, main > p:first-child + h2 { font: 600 .78rem/1.3 var(--sans); text-transform: uppercase; letter-spacing: .09em; color: var(--muted); border: 0; margin-bottom: 0; }
+p { margin: .7rem 0; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
 img { max-width: 100%; height: auto; }
-pre, code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .85rem; }
-code { background: var(--code-bg); padding: .1em .3em; border-radius: 4px; }
-div.sourceCode, div.codewrap, pre { background: var(--code-bg); color: var(--fg); border: 1px solid var(--rule); border-radius: 6px; padding: .8rem 1rem; overflow-x: auto; margin: 1rem 0; }
+/* the PNS logo is a transparent image with dark ink: white backing in dark mode */
+@media (prefers-color-scheme: dark) { img[alt="PNS"] { background: #fff; padding: 6px 10px; border-radius: 6px; } }
+
+/* code stays on a light background in both colour schemes (pandoc's highlighting colours are made for it) */
+pre, code { font-family: var(--mono); font-size: .85rem; }
+code { background: var(--code-bg); color: var(--code-fg); padding: .1em .3em; border-radius: 4px; }
+div.sourceCode, div.codewrap, pre { background: var(--code-bg); color: var(--code-fg); border: 1px solid var(--code-rule); border-radius: 6px; padding: .8rem 1rem; overflow-x: auto; margin: 1rem 0; }
 div.sourceCode pre { border: 0; padding: 0; margin: 0; background: transparent; }
 pre code { background: transparent; padding: 0; }
 table { border-collapse: collapse; margin: 1rem 0; }
 th, td { border: 1px solid var(--rule); padding: .3rem .7rem; }
-blockquote { margin: 1rem 0; padding: 0 1rem; color: var(--muted); border-left: 4px solid var(--rule); }
+blockquote { margin: 1rem 0; padding: 0 1rem; color: var(--muted); border-left: 3px solid var(--rule); }
 mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; }
-@media (max-width: 40rem) { html { font-size: 16px; } main { padding: 1rem .8rem 2rem; } }
+
 div.sourceCode, div.codewrap { position: relative; }
 div.codewrap { background: transparent; border: 0; padding: 0; margin: 1rem 0; }
 div.codewrap pre { margin: 0; }
-.copy-btn { position: absolute; top: .4rem; right: .4rem; z-index: 1; font: inherit; font-size: .75rem; color: var(--muted);
-  background: var(--bg); border: 1px solid var(--rule); border-radius: 6px; padding: .15rem .55rem; cursor: pointer; opacity: .55; }
+.copy-btn { position: absolute; top: .4rem; right: .4rem; z-index: 1; font: .75rem var(--sans); color: #59636e; background: #fff; border: 1px solid var(--code-rule); border-radius: 6px; padding: .15rem .55rem; cursor: pointer; opacity: .55; }
 div.sourceCode:hover .copy-btn, div.codewrap:hover .copy-btn, .copy-btn:focus { opacity: 1; }
-.copy-btn:hover { color: var(--fg); }
+.copy-btn:hover { color: #1f2328; }
 div.sourceCode { overflow: visible; }
 div.sourceCode pre { overflow-x: auto; }
+
+@media (max-width: 40rem) { html { font-size: 16px; } main { padding: 1.2rem .9rem 2rem; } h1 { font-size: 1.65rem; } }
+@media print { nav { display: none; } body { color: #000; background: #fff; } a { color: #000; } }
