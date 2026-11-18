@@ -57,9 +57,13 @@
 3 exams CC (tous coeff. 1)
 
 # Organisation
-- 12 séances de CM
-- 12 séances de TD
+
+12 séances de CM
+
+12 séances de TD
 
 # Intervenants
-- [J.-B. Caillau](mailto:jean-baptiste.caillau@univ-cotedazur.fr) (CM et TD)
-- [L. Sacchelli](mailto:ludovic.sacchelli@inria.fr) (TD)
+
+[J.-B. Caillau](mailto:jean-baptiste.caillau@univ-cotedazur.fr) (CM et TD)
+
+[L. Sacchelli](mailto:ludovic.sacchelli@inria.fr) (TD)
