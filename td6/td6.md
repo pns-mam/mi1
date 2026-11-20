@@ -34,4 +34,10 @@ Montrer que $f$ n'appartient pas à $L^p([0,1])$ pour $p$ dans $]1,+\infty]$.
 Montrer que $f$ appartient à $L^p([1,\infty[)$ pour $p$ dans $[1,+\infty]$.
 
 ## Exercice 3
-On se place sur un espace mesuré $(X,\mathscr{B},\mu)$, avec $\mu(X) < \infty$. Soient $p$ et $q$ dans $[1,\infty]$, avec $p \leq q$. Montrer que $L^q(X,\mathscr{B},\mu) \subset L^p(X,\mathscr{B},\mu)$, avec inclusion stricte.
+On se place sur un espace mesuré $(X,\mathscr{B},\mu)$, avec $\mu(X) < \infty$. Soient $p$ et $q$ dans $[1,\infty]$, avec $p \leq q$.
+
+### 3.1
+Montrer que $L^q(X,\mathscr{B},\mu) \subset L^p(X,\mathscr{B},\mu)$.
+
+### 3.2
+Dans le cas particulier de $X = [0,1]$ muni de la mesure de Lebesgue, montrer que cette inclusion est stricte dès que $p < q$, c'est-à-dire qu'il existe une fonction de $L^p([0,1])$ qui n'appartient pas à $L^q([0,1])$.
